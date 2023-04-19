@@ -114,5 +114,9 @@ const CardBox = styled.ul`
       height: 7.2rem;
     }
     width: calc(25% - 20px);
+    @media (max-width: 780px) {
+      margin-bottom: 20px;
+      width: 24%;
+    }
   }
 `;
