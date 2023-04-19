@@ -15,17 +15,19 @@ export default function Banner({ sm }) {
         <p className="title">DAO Montenegro</p>
         <p className="subtitle">new organization, new world</p>
         <CallButton>call to action</CallButton>
-        <SocialBox>
-          <a href="">
-            <img src={TwitterIcon} alt="" />
-          </a>
-          <a href="">
-            <img src={TGIcon} alt="" />
-          </a>
-          <a href="">
-            <img src={EmailIcon} alt="" />
-          </a>
-        </SocialBox>
+        {!sm && (
+          <SocialBox>
+            <a href="">
+              <img src={TwitterIcon} alt="" />
+            </a>
+            <a href="">
+              <img src={TGIcon} alt="" />
+            </a>
+            <a href="">
+              <img src={EmailIcon} alt="" />
+            </a>
+          </SocialBox>
+        )}
       </Content>
     </BannerBox>
   );
@@ -33,7 +35,7 @@ export default function Banner({ sm }) {
 
 const BannerBox = styled.section`
 position: relative;
-  height: ${({ sm }) => (sm ? "500px" : "734px")};
+  height: ${({ sm }) => (sm ? "500px" : "73.4rem")};
   img {
     width: 100%;
     object-fit: fill;
@@ -56,22 +58,28 @@ const Content = styled.div`
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
-    font-size: 62px;
-    line-height: 75px;
+    font-size: 6.2rem;
+    line-height: 7.5rem;
     text-shadow: 0px 0px 40px rgba(255, 255, 255, 0.9);
   }
   p.title {
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 96px;
-    line-height: 116px;
+    font-size: 9.6rem;
+    line-height: 11.6rem;
     -webkit-text-stroke: 2px #fbf5ef;
     text-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+  }
+
+  @media (max-width: 1280px) {
+    p.title {
+      margin-top: 80px;
+    }
   }
 `;
 
 const CallButton = styled.span`
-  margin-block: 66px;
+  margin-block: 6.6rem;
   cursor: pointer;
   width: 323px;
   height: 50px;
@@ -89,7 +97,7 @@ const CallButton = styled.span`
 
 const SocialBox = styled.div`
   img {
-    width: 60px;
+    width: 6rem;
   }
   a {
     margin-right: 35px;

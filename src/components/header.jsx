@@ -59,7 +59,7 @@ const LogoBox = styled.div`
   img {
     width: 23.6rem !important;
   }
-  @media (max-width: 1280px) {
+  @media (max-width: 780px) {
     padding-top: 12px;
     img {
       width: 130px !important;
