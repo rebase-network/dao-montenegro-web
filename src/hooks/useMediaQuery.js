@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const sm = "1280px";
+const sm = "780px";
 
 export default function useMediaQuery(screen) {
   const [matches, setMatches] = useState(false);

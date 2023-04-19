@@ -2,7 +2,6 @@ import styled, { css } from "styled-components";
 import LogoSvg from "../assets/logo_full.svg";
 
 export default function Header({ sm }) {
-
   const jump = (anchorName) => {
     if (anchorName) {
       const anchorElement = document.getElementById(anchorName);
@@ -38,15 +37,16 @@ export default function Header({ sm }) {
 
 const SmallHeaderStyle = css`
   justify-content: center;
-`
+  height: 50px;
+`;
 
 const HeaderBox = styled.header`
   position: absolute;
   width: 100%;
-  height: 90px;
+  height: 9rem;
   left: 0px;
   top: 0px;
-  padding-inline: 60px;
+  padding-inline: 6rem;
   box-sizing: border-box;
   background: rgba(131, 227, 219, 0.5);
   display: flex;
@@ -55,20 +55,26 @@ const HeaderBox = styled.header`
 `;
 
 const LogoBox = styled.div`
-  padding-top: 21px;
+  padding-top: 2.1rem;
   img {
-    width: 236px;
+    width: 23.6rem !important;
   }
-`
+  @media (max-width: 1280px) {
+    padding-top: 12px;
+    img {
+      width: 130px !important;
+    }
+  }
+`;
 const Nav = styled.ul`
   display: flex;
   gap: 60px;
   margin: 0;
-  line-height: 90px;
+  line-height: 9rem;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 3rem;
   cursor: pointer;
   a {
     color: #000;
