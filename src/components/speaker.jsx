@@ -75,6 +75,8 @@ const Header = styled.div`
 `;
 
 const CardBox = styled.ul`
+  position: relative;
+  top: -1px;
   width: 100%;
   padding: 5rem 6rem 8.5rem;
   background: #f98845;
