@@ -98,15 +98,17 @@ const Header = styled.div`
 
 
 const Content = styled.div`
-  background-color: #B087E2;
-  background-image: url(${AgendaBg});
-  background-position: bottom;
-  background-repeat: no-repeat;
+  background-color: #b087e2;
+  padding: 50px 70px 0;
 `;
 
 const Container = styled.div`
-  padding: 50px 70px;
-`
+  background-image: url(${AgendaBg});
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+  background-size: contain;
+`;
 
 const Part = styled.div`
   p {
