@@ -40,8 +40,8 @@ const BannerBox = styled.section`
 position: relative;
   height: ${({ sm }) => (sm ? "500px" : "73.4rem")};
   img {
-    width: 100%;
-    object-fit: fill;
+    /* width: 100%; */
+    /* object-fit: fill; */
   }
   background-size: cover;
   background-repeat: no-repeat;
