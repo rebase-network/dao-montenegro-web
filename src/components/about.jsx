@@ -214,7 +214,7 @@ const Text = styled.div`
   font-weight: 600;
   font-size: 2rem;
   line-height: 5rem;
-  &.symbol {
+  .symbol {
     color: #296af1;
   }
   @media (max-width: 780px) {
