@@ -31,7 +31,7 @@ export default function EventDetail() {
       </ImgBox>
       <IntroBox>
         <li>
-          <p className="title"> Initiating Organization:SeeDAO </p>
+          <p className="title"> Initiating Organization: SeeDAO </p>
           <div className="introContent">
             <span>
               <img src={SeeDAOIcon} alt="" />
@@ -47,7 +47,7 @@ export default function EventDetail() {
           </div>
         </li>
         <li>
-          <p className="title">Co-organizer:Rebase </p>
+          <p className="title">Co-organizer: Rebase </p>
           <div className="introContent">
             <span>
               <img src={RebaseIcon} alt="" />
@@ -71,43 +71,43 @@ export default function EventDetail() {
 const EventBox = styled.section`
   width: 100%;
   box-sizing: border-box;
-  padding-inline: 60px;
-  padding-block: 90px 120px;
+  padding-inline: 6rem;
+  padding-block: 9rem 12rem;
   p {
     margin: 0;
   }
-`
+`;
 
 const Content = styled.div`
   .title {
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
-    font-size: 64px;
-    line-height: 77px;
-    margin-bottom: 44px;
+    font-size: 6.4rem;
+    line-height: 7.7rem;
+    margin-bottom: 4.4rem;
   }
   .info {
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
-    font-size: 42px;
-    line-height: 51px;
+    font-size: 4.2rem;
+    line-height: 5.1rem;
     mix-blend-mode: normal;
     display: flex;
     align-items: center;
-    margin-bottom: 26px;
+    margin-bottom: 2.6rem;
     .icon {
       display: inline-block;
-      width: 55px;
-      height: 55px;
-      margin-right: 29px;
+      width: 5.5rem;
+      height: 5.5rem;
+      margin-right: 2.9rem;
       img {
-        height: 55px;
+        height: 5.5rem;
       }
       &.loc img {
-        height: 62px;
-        margin-left: 8px;
+        height: 6.2rem;
+        margin-left: .8rem;
       }
     }
   }
@@ -116,46 +116,46 @@ const Content = styled.div`
 const ImgBox = styled.div`
   width: 100%;
   position: relative;
-  margin-top: 94px;
+  margin-top: 9.4rem;
   img {
     width: 100%;
   }
   .circle {
     position: absolute;
-    right: 12px;
-    bottom: 120px;
-    height: 569px;
-    width: auto;
+    right: 1.2rem;
+    bottom: 1.12rem;
+    width: unset;
+    height: 56.9rem;
   }
 `;
 
 const IntroBox = styled.ul`
-  margin-top: 110px;
+  margin-top: 11rem;
   p.title {
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
-    font-size: 64px;
-    line-height: 77px;
-    margin-bottom: 25px;
+    font-size: 6.4rem;
+    line-height: 7.7rem;
+    margin-bottom: 2.5rem;
   }
   li {
     .introContent {
       img {
-        width: 260px;
+        width: 26rem;
       }
       display: flex;
       p {
-        margin-left: 50px;
+        margin-left: 5rem;
         font-family: "Inter";
         font-style: normal;
         font-weight: 400;
-        font-size: 32px;
-        line-height: 45px;
+        font-size: 3.2rem;
+        line-height: 4.5rem;
       }
     }
     &:first-child {
-      margin-bottom: 100px;
+      margin-bottom: 10rem;
     }
   }
 `;
