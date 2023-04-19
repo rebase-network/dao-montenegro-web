@@ -101,16 +101,16 @@ const SectionTitle = styled.div`
 `;
 const JoinBox = styled.div`
   display: flex;
-  margin-top: 37px;
-  padding-bottom: 58px;
+  margin-top: 3.7rem;
+  padding-bottom: 5.8rem;
   img {
-    width: 449px;
-    margin-right: 48px;
+    width: 44.9rem;
+    margin-right: 4.8rem;
   }
 
   @media (max-width: 1280px) {
     display: block;
-    padding-inline: 40px;
+    padding-inline: 4rem;
 
     img {
       width: 100%;
@@ -118,14 +118,14 @@ const JoinBox = styled.div`
   }
 `;
 const JoinContent = styled.div`
-  padding-right: 70px;
+  padding-right: 7rem;
 
   p {
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 2.8rem;
+    line-height: 4rem;
     margin: 0;
   }
 
@@ -136,7 +136,7 @@ const JoinContent = styled.div`
   @media (max-width: 1280px) {
     padding-right: 0;
     p {
-      font-size: 24px;
+      font-size: 2.4rem;
     }
   }
 `;
@@ -144,56 +144,78 @@ const JoinContent = styled.div`
 const Footer = styled.footer`
   width: 100%;
   box-sizing: border-box;
-  padding: 55px;
+  padding: 5.5rem;
   background: #f0e1d1;
 `;
 
-const Part = styled.div``;
+const Part = styled.div`
+  @media (max-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+`;
 
 const CotactPart = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 59px;
+  margin-top: 5.9rem;
+  @media (max-width: 1280px) {
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 35px
+  }
 `;
 
 const LinePart = styled.div`
   display: flex;
   align-items: center;
+  @media (max-width: 1280px) {
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
 `;
 
 const Title = styled.div`
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 50px;
+  font-size: 3.2rem;
+  line-height: 5rem;
 `;
 
 const Text = styled.div`
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 50px;
+  font-size: 2rem;
+  line-height: 5rem;
   &.symbol {
     color: #296af1;
   }
 `;
 
 const ContactText = styled(Text)`
-  margin-left: 20px;
+  margin-left: 2rem;
 `;
 
 const SocialBox = styled.div`
-  margin-left: 32px;
+  margin-left: 3.2rem;
   img {
-    width: 60px;
+    width: 6rem;
   }
   a {
-    margin-right: 48px;
+    margin-right: 4.8rem;
     &:last-child {
       margin-right: 0;
     }
+  }
+  @media (max-width: 1280px) {
+    margin-top: 25px;
+    margin-left: 0;
   }
 `;
