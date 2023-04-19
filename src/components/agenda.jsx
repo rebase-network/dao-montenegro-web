@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import AgendaImg from "../assets/agenda.png";
 import AgendaBg from "../assets/agenda_bg.png";
+import AgendaTitle from "../assets/agenda_title.png";
 
 export default function Agenda() {
   return (
@@ -8,7 +9,7 @@ export default function Agenda() {
       <Header>
         <img src={AgendaImg} alt="" />
         <div>
-          <span>Agenda</span>
+          <img className="title" src={AgendaTitle} alt="" />
         </div>
       </Header>
       <Content>
@@ -93,6 +94,9 @@ const Header = styled.div`
     text-transform: uppercase;
     -webkit-text-stroke: 3px #fff;
     justify-content: center;
+  }
+  .title {
+    height: 11.6rem;
   }
 `;
 

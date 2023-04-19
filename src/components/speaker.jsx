@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import SpeakerImg from "../assets/speaker.png";
+import SpeakerTitle from "../assets/speaker_title.png";
 
 const List = [
   {
@@ -30,9 +31,7 @@ export default function Speaker() {
       <Header>
         <img src={SpeakerImg} alt="" />
         <div>
-          <span>
-            Proposed <br /> Guest Speakers
-          </span>
+          <img className="title" src={SpeakerTitle} alt="" />
         </div>
       </Header>
       <CardBox>
@@ -72,6 +71,9 @@ const Header = styled.div`
     -webkit-text-stroke: 3px #fff;
     justify-content: center;
   }
+  .title {
+    height: 23.2rem;
+  }
 `;
 
 const CardBox = styled.ul`
@@ -81,7 +83,7 @@ const CardBox = styled.ul`
   padding: 5rem 6rem 8.5rem;
   background: #f98845;
   display: flex;
-  justify-content:  space-between;
+  justify-content: space-between;
   flex-wrap: wrap;
 
   box-sizing: border-box;
