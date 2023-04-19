@@ -123,6 +123,7 @@ const JoinBox = styled.div`
 `;
 const JoinContent = styled.div`
   padding-right: 7rem;
+  padding-top: 3rem;
 
   p {
     font-family: "Inter";
@@ -143,6 +144,13 @@ const JoinContent = styled.div`
       font-size: 2.4rem;
     }
   }
+  @media (max-width: 780px) {
+    padding-top: 20px;
+    p {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  };
 `;
 
 const Footer = styled.footer`
@@ -193,6 +201,11 @@ const Title = styled.div`
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 5rem;
+  @media (max-width: 780px) {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
 `;
 
 const Text = styled.div`
@@ -203,6 +216,10 @@ const Text = styled.div`
   line-height: 5rem;
   &.symbol {
     color: #296af1;
+  }
+  @media (max-width: 780px) {
+    font-size: 14px;
+    line-height: 24px;
   }
 `;
 
@@ -224,5 +241,11 @@ const SocialBox = styled.div`
   @media (max-width: 1280px) {
     margin-top: 25px;
     margin-left: 0;
+  }
+  @media (max-width: 780px) {
+    img {
+      width: 32px;
+    }
+    margin-top: 10px;
   }
 `;

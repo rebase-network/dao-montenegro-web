@@ -131,6 +131,7 @@ const ImgBox = styled.div`
 
 const IntroBox = styled.ul`
   margin-top: 11rem;
+  padding: 0;
   p.title {
     font-family: "Inter";
     font-style: normal;
@@ -156,6 +157,12 @@ const IntroBox = styled.ul`
     }
     &:first-child {
       margin-bottom: 10rem;
+    }
+    @media (max-width: 780px) {
+      .introContent p {
+        font-size: 14px;
+        line-height: 19px;
+      }
     }
   }
 `;

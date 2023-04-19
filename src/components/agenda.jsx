@@ -118,6 +118,12 @@ const Part = styled.div`
     font-size: 3.2rem;
     line-height: 4.5rem;
   }
+  @media (max-width: 780px) {
+    p {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
 `;
 
 
