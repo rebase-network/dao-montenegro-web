@@ -88,8 +88,8 @@ const Header = styled.div`
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
-    font-size: 96px;
-    line-height: 116px;
+    font-size: 9.6rem;
+    line-height: 11.6rem;
     text-transform: uppercase;
     -webkit-text-stroke: 3px #fff;
     justify-content: center;
@@ -99,14 +99,14 @@ const Header = styled.div`
 
 const Content = styled.div`
   background-color: #b087e2;
-  padding: 50px 70px 0;
+  padding: 5rem 7rem 0;
 `;
 
 const Container = styled.div`
   background-image: url(${AgendaBg});
   background-position: bottom;
   background-repeat: no-repeat;
-  padding-bottom: 50px;
+  padding-bottom: 5rem;
   background-size: contain;
 `;
 
@@ -115,22 +115,22 @@ const Part = styled.div`
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 45px;
+    font-size: 3.2rem;
+    line-height: 4.5rem;
   }
 `;
 
 
 const Title = styled.div`
   display: flex;
-  gap: 40px;
+  gap: 4rem;
   align-items: center;
   .text {
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
-    font-size: 64px;
-    line-height: 77px;
+    font-size: 6.4rem;
+    line-height: 7.7rem;
 
     color: #ffffff;
   }
@@ -139,5 +139,11 @@ const Title = styled.div`
     width: 113px;
     height: 9px;
     background: #03ffa4;
+  }
+  @media (max-width: 780px) {
+    .shape {
+      width: 50px;
+      height: 4px;
+    }
   }
 `;
