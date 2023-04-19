@@ -6,22 +6,25 @@ import Header from "./header";
 import TwitterIcon from "../assets/tw.svg";
 import TGIcon from "../assets/tg.svg";
 import EmailIcon from "../assets/email.svg";
+import TitleSvg from "../assets/montenegro.png";
 
 export default function Banner({ sm }) {
   return (
     <BannerBox sm={sm}>
       <Header sm={sm} />
       <Content>
-        <p className="title">DAO Montenegro</p>
+        <p className="title">
+          <img src={TitleSvg} alt="" />
+        </p>
         <p className="subtitle">new organization, new world</p>
         <CallButton>call to action</CallButton>
         {!sm && (
           <SocialBox>
             <a href="">
-              <img src={TwitterIcon} alt="" />
+              <img src={TGIcon} alt="" />
             </a>
             <a href="">
-              <img src={TGIcon} alt="" />
+              <img src={TwitterIcon} alt="" />
             </a>
             <a href="">
               <img src={EmailIcon} alt="" />
@@ -50,10 +53,13 @@ position: relative;
 const Content = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   height: 100%;
   p {
+    margin: 0;
+  }
+  p.subtitle {
     margin: 0;
     font-family: "Inter";
     font-style: normal;
@@ -61,20 +67,25 @@ const Content = styled.div`
     font-size: 6.2rem;
     line-height: 7.5rem;
     text-shadow: 0px 0px 40px rgba(255, 255, 255, 0.9);
+    margin-top: -4.2rem;
   }
   p.title {
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 9.6rem;
-    line-height: 11.6rem;
-    -webkit-text-stroke: 2px #fbf5ef;
-    text-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+    img {
+      width: 102rem;
+    }
   }
 
-  @media (max-width: 1280px) {
+  @media (max-width: 780px) {
     p.title {
-      margin-top: 80px;
+      margin-top: 26rem;
+      img {
+        width: 130rem;
+      }
     }
+    p.subtitle {
+      margin-top: -3rem;
+    }
+    justify-content: center;
   }
 `;
 
@@ -93,9 +104,14 @@ const CallButton = styled.span`
   color: #39ffb8;
   display: inline-block;
   text-align: center;
+  @media (max-width: 780px) {
+    margin-bottom: 14rem;
+    margin-top: 12rem;
+  }
 `;
 
 const SocialBox = styled.div`
+  margin-bottom: 10px;
   img {
     width: 6rem;
   }

@@ -150,6 +150,9 @@ const Footer = styled.footer`
   box-sizing: border-box;
   padding: 5.5rem;
   background: #f0e1d1;
+  @media (max-width: 1280px) {
+    padding-bottom: 0;
+  }
 `;
 
 const Part = styled.div`
