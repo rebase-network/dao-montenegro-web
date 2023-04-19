@@ -37,7 +37,9 @@ export default function Speaker() {
       <CardBox>
         {List.map((l, i) => (
           <li key={i}>
-            <div className="name">{l.name}</div>
+            <div className="name">
+              <span>{l.name}</span>
+            </div>
             <div className="title">{l.title}</div>
           </li>
         ))}
@@ -104,6 +106,9 @@ const CardBox = styled.ul`
       font-size: 4rem;
       color: #ffffff;
       height: 10.9rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     .title {
       font-family: "Inter";
