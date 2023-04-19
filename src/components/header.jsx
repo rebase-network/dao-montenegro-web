@@ -103,12 +103,15 @@ const Nav = styled.ul`
   gap: 60px;
   margin: 0;
   line-height: 9rem;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 3rem;
   li {
     cursor: pointer;
+  }
+  li,
+  a {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
   }
 `;
 
@@ -127,14 +130,17 @@ const NavMContent = styled.ul`
   background: rgba(131, 227, 219, 0.8);
   width: 100%;
   margin: 0;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
   padding: 0;
   li {
     cursor: pointer;
     text-align: center;
+  }
+  li,
+  a {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
   }
 `;
 const Menu = styled.img`
