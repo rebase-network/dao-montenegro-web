@@ -66,8 +66,8 @@ const Header = styled.div`
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
-    font-size: 96px;
-    line-height: 116px;
+    font-size: 9.6rem;
+    line-height: 11.6rem;
     text-transform: uppercase;
     -webkit-text-stroke: 3px #fff;
     justify-content: center;
@@ -76,7 +76,7 @@ const Header = styled.div`
 
 const CardBox = styled.ul`
   width: 100%;
-  padding: 50px 60px 85px;
+  padding: 5rem 6rem 8.5rem;
   background: #f98845;
   display: flex;
   justify-content:  space-between;
@@ -84,8 +84,8 @@ const CardBox = styled.ul`
 
   box-sizing: border-box;
   li {
-    height: 179px;
-    margin-bottom: 30px;
+    height: 17.9rem;
+    margin-bottom: 3rem;
     div {
       border: 2px solid #000000;
       &.title {
@@ -97,17 +97,17 @@ const CardBox = styled.ul`
       font-family: "Inter";
       font-style: normal;
       font-weight: 700;
-      font-size: 40px;
+      font-size: 4rem;
       color: #ffffff;
-      height: 109px;
+      height: 10.9rem;
     }
     .title {
       font-family: "Inter";
       font-style: normal;
       font-weight: 500;
-      font-size: 32px;
-      line-height: 72px;
-      height: 72px;
+      font-size: 3.2rem;
+      line-height: 7.2rem;
+      height: 7.2rem;
     }
     width: calc(25% - 20px);
   }

@@ -4,8 +4,12 @@ import aboutImg01 from "../assets/about.png";
 import TwitterIcon from "../assets/tw.svg";
 import TGIcon from "../assets/tg.svg";
 import EmailIcon from "../assets/email.svg";
+import useMediaQuery from "../hooks/useMediaQuery";
 
-export default function About({ sm }) {
+export default function About() {
+
+  const sm = useMediaQuery("1280px");
+
   return (
     <SectionStyled>
       <SectionTitle>Join Us</SectionTitle>
@@ -85,7 +89,7 @@ export default function About({ sm }) {
 }
 
 const SectionStyled = styled.section`
-  padding-top: 64px;
+  padding-top: 6.4rem;
 `;
 
 const SectionTitle = styled.div`
