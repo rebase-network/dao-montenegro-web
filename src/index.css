@@ -4,7 +4,6 @@
   font-weight: 400;
 
   color: #000;
-  
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,7 +25,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #FBF5EF;
+  background-color: #fbf5ef;
 }
 
 h1 {
@@ -58,15 +57,32 @@ ul {
   margin: 0;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  src: local("Inter"), url("./assets/fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 500;
+  src: local("Inter"), url("./assets/fonts/Inter-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  src: local("Inter"), url("./assets/fonts/Inter-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  src: local("Inter"), url("./assets/fonts/Inter-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 900;
+  src: local("Inter"), url("./assets/fonts/Inter-Black.ttf");
 }
