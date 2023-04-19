@@ -27,6 +27,11 @@ body {
   min-height: 100vh;
   background-color: #fbf5ef;
   overflow-x: hidden;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  width: 0;
+  display: none;
 }
 
 h1 {
