@@ -13,56 +13,108 @@ import MaskIcon from "../assets/logos/mask.svg";
 // communities
 import RebaseIcon from "../assets/logos/rebase.png";
 
-const cohosts = [
+const hosts = [
   {
+    name: "SeeDAO",
     img: SeeDAOIcon,
     href: "https://seedao.xyz"
   },
   {
+    name: "BuilderDAO",
     img: BuilderDAOIcon,
     href: "https://builderdao.io/",
   },
   {
+    name: "Mask Network",
     img: MaskIcon,
     href: "https://mask.io/",
-  },
+  }
+];
+
+const coorganizer = [
   {
-    img: SeeDAOIcon,
-    href: "https://seedao.xyz"
-  },
-  {
-    img: BuilderDAOIcon,
-    href: "https://builderdao.io/",
-  },
-  {
-    img: MaskIcon,
-    href: "https://mask.io/",
-  },
-  {
-    img: SeeDAOIcon,
-    href: "https://seedao.xyz"
-  },
-  {
-    img: BuilderDAOIcon,
-    href: "https://builderdao.io/",
-  },
-  {
-    img: MaskIcon,
-    href: "https://mask.io/",
-  },
+    name: "Rebase",
+    img: RebaseIcon,
+    href: "https://rebase.network",
+  }
 ];
 
 const sponsors = [
 
 ];
 
+
+const medias = [
+  {
+    name: "Foresight News",
+    img: SeeDAOIcon,
+    href: "",
+    lv: 2,
+  },
+  {
+    name: "Odaily",
+    img: SeeDAOIcon,
+    href: "",
+    lv: 2,
+  },
+  {
+    name: "PANews",
+    img: SeeDAOIcon,
+    href: "",
+    lv: 2,
+  },
+  {
+    name: "Chaincather",
+    img: SeeDAOIcon,
+    href: "",
+    lv: 2,
+  },
+  {
+    name: "Cointime",
+    img: SeeDAOIcon,
+    href: "",
+    lv: 2,
+  },
+  {
+    name: "BlockTempo",
+    img: SeeDAOIcon,
+    href: "",
+    lv: 1,
+  },
+]
+
 const communities = [
   {
+    name: "登链社区",
     img: RebaseIcon,
-    href: "https://rebase.network",
-  }
+    href: "",
+    lv: 2,
+  },
+  {
+    name: "ECN以太坊中文社区",
+    img: RebaseIcon,
+    href: "",
+    lv: 1,
+  },
+  {
+    name: "bfrenz",
+    img: RebaseIcon,
+    href: "",
+    lv: 2,
+  },
+  {
+    name: "Moledao",
+    img: RebaseIcon,
+    href: "",
+    lv: 2,
+  },
+  {
+    name: "KNN3",
+    img: RebaseIcon,
+    href: "",
+    lv: 2,
+  },
 ];
-
 
 
 export default function PartiesDetail() {
@@ -73,7 +125,7 @@ export default function PartiesDetail() {
         <li>
           <p className="title"> Organizers </p>
           <LogoBox>
-            {cohosts.map((g, i) => (
+            {hosts.map((g, i) => (
               <div key={i}>
                 <a href={g.href} target="_blank" rel="noopener noreferrer">
                   <img src={g.img} alt="" />
