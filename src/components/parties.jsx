@@ -3,70 +3,66 @@ import EventImg01 from "../assets/event01.png";
 import EventImg02 from "../assets/event02.png";
 import LocationIcon from "../assets/location.svg";
 import TimeIcon from "../assets/time.svg";
-import RebaseIcon from "../assets/rebase_logo.svg";
-import SeeDAOIcon from "../assets/seedao_logo.svg";
+
+// hosts
+import SeeDAOIcon from "../assets/logos/seedao.png";
+import BuilderDAOIcon from "../assets/logos/builder_dao.svg";
+import MaskIcon from "../assets/logos/mask.svg";
+
+// communities
+import RebaseIcon from "../assets/logos/rebase.png";
 
 const cohosts = [
   {
     img: SeeDAOIcon,
-    href: "",
+    href: "https://seedao.xyz"
+  },
+  {
+    img: BuilderDAOIcon,
+    href: "https://builderdao.io/",
+  },
+  {
+    img: MaskIcon,
+    href: "https://mask.io/",
   },
   {
     img: SeeDAOIcon,
-    href: "",
+    href: "https://seedao.xyz"
+  },
+  {
+    img: BuilderDAOIcon,
+    href: "https://builderdao.io/",
+  },
+  {
+    img: MaskIcon,
+    href: "https://mask.io/",
   },
   {
     img: SeeDAOIcon,
-    href: "",
+    href: "https://seedao.xyz"
   },
   {
-    img: SeeDAOIcon,
-    href: "",
+    img: BuilderDAOIcon,
+    href: "https://builderdao.io/",
   },
   {
-    img: SeeDAOIcon,
-    href: "",
+    img: MaskIcon,
+    href: "https://mask.io/",
   },
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
+];
+
+const sponsors = [
+
 ];
 
 const communities = [
   {
-    img: SeeDAOIcon,
-    href: "",
-  },
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
+    img: RebaseIcon,
+    href: "https://rebase.network",
+  }
 ];
+
+
 
 export default function PartiesDetail() {
 
