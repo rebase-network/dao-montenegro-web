@@ -28,7 +28,7 @@ import DenglianIcon from "../assets/logos/denglian.png";
 import ECNIcon from "../assets/logos/ecn.png";
 import BfrenzIcon from "../assets/logos/bfrenz.png";
 import MoledaoIcon from "../assets/logos/moledao.png";
-import KNN3Icon from "../assets/logos/knn3.png";
+import KNN3Icon from "../assets/logos/KNN3.png";
 
 
 const hosts = [
