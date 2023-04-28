@@ -26,7 +26,9 @@ import CointimeIcon from "../assets/logos/cointime.png";
 // communities
 import DenglianIcon from "../assets/logos/denglian.png";
 import ECNIcon from "../assets/logos/ecn.png";
-// import BfrenzIcon from "../assets/logos/bfrenz.png";
+import BfrenzIcon from "../assets/logos/bfrenz.png";
+import MoledaoIcon from "../assets/logos/moledao.png";
+import KNN3Icon from "../assets/logos/knn3.png";
 
 
 const hosts = [
@@ -91,12 +93,12 @@ const medias = [
     href: "",
     lv: 2,
   },
-  {
-    name: "BlockTempo",
-    img: SeeDAOIcon,
-    href: "",
-    lv: 1,
-  },
+  // {
+  //   name: "BlockTempo",
+  //   img: SeeDAOIcon,
+  //   href: "",
+  //   lv: 1,
+  // },
 ]
 
 const communities = [
@@ -114,19 +116,19 @@ const communities = [
   },
   {
     name: "bfrenz",
-    img: SeeDAOIcon,
+    img: BfrenzIcon,
     href: "",
     lv: 2,
   },
   {
     name: "Moledao",
-    img: SeeDAOIcon,
+    img: MoledaoIcon,
     href: "",
     lv: 2,
   },
   {
     name: "KNN3",
-    img: SeeDAOIcon,
+    img: KNN3Icon,
     href: "",
     lv: 2,
   },
