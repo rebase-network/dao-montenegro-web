@@ -5,13 +5,29 @@ import LocationIcon from "../assets/location.svg";
 import TimeIcon from "../assets/time.svg";
 
 // hosts
-// import SeeDAOIcon from "../assets/logos/seedao.png";
-import SeeDAOIcon from "../assets/logo_full.svg";
+import SeeDAOIcon from "../assets/logos/seedao.svg";
 import BuilderDAOIcon from "../assets/logos/builder_dao.svg";
 import MaskIcon from "../assets/logos/mask.svg";
 
-// communities
+// cohosts
 import RebaseIcon from "../assets/logos/rebase.png";
+
+// sponsors
+
+// medias
+import ForesightIcon from "../assets/logos/foresight.png";
+import OdailyIcon from "../assets/logos/odaily.png";
+import PANewsIcon from "../assets/logos/panews.png";
+import ChaincatcherIcon from "../assets/logos/chaincatcher.png";
+import CointimeIcon from "../assets/logos/cointime.png";
+// import BlockTempoIcon from "../assets/logos/blocktempo.png";
+
+
+// communities
+import DenglianIcon from "../assets/logos/denglian.png";
+import ECNIcon from "../assets/logos/ecn.png";
+// import BfrenzIcon from "../assets/logos/bfrenz.png";
+
 
 const hosts = [
   {
@@ -31,7 +47,7 @@ const hosts = [
   }
 ];
 
-const coorganizer = [
+const coorganizers = [
   {
     name: "Rebase",
     img: RebaseIcon,
@@ -47,31 +63,31 @@ const sponsors = [
 const medias = [
   {
     name: "Foresight News",
-    img: SeeDAOIcon,
+    img: ForesightIcon,
     href: "",
     lv: 2,
   },
   {
     name: "Odaily",
-    img: SeeDAOIcon,
+    img: OdailyIcon,
     href: "",
     lv: 2,
   },
   {
     name: "PANews",
-    img: SeeDAOIcon,
+    img: PANewsIcon,
     href: "",
     lv: 2,
   },
   {
-    name: "Chaincather",
-    img: SeeDAOIcon,
+    name: "Chaincatcher",
+    img: ChaincatcherIcon,
     href: "",
     lv: 2,
   },
   {
     name: "Cointime",
-    img: SeeDAOIcon,
+    img: CointimeIcon,
     href: "",
     lv: 2,
   },
@@ -86,31 +102,31 @@ const medias = [
 const communities = [
   {
     name: "登链社区",
-    img: RebaseIcon,
+    img: DenglianIcon,
     href: "",
     lv: 2,
   },
   {
     name: "ECN以太坊中文社区",
-    img: RebaseIcon,
+    img: ECNIcon,
     href: "",
     lv: 1,
   },
   {
     name: "bfrenz",
-    img: RebaseIcon,
+    img: SeeDAOIcon,
     href: "",
     lv: 2,
   },
   {
     name: "Moledao",
-    img: RebaseIcon,
+    img: SeeDAOIcon,
     href: "",
     lv: 2,
   },
   {
     name: "KNN3",
-    img: RebaseIcon,
+    img: SeeDAOIcon,
     href: "",
     lv: 2,
   },
@@ -148,10 +164,36 @@ export default function PartiesDetail() {
           </div> */}
         </li>
 
-        <li id="sponsor">
+        {/* <li id="sponsor">
           <p className="title">Sponsors </p>
           <LogoBox>
             {communities.map((g, i) => (
+              <div key={i}>
+                <a href={g.href} target="_blank" rel="noopener noreferrer">
+                  <img src={g.img} alt="" />
+                </a>
+              </div>
+            ))}
+          </LogoBox>
+        </li> */}
+
+        <li id="sponsor">
+          <p className="title">Co-organizers </p>
+          <LogoBox>
+            {coorganizers.map((g, i) => (
+              <div key={i}>
+                <a href={g.href} target="_blank" rel="noopener noreferrer">
+                  <img src={g.img} alt="" />
+                </a>
+              </div>
+            ))}
+          </LogoBox>
+        </li>
+
+        <li>
+          <p className="title">Medias </p>
+          <LogoBox>
+            {medias.map((g, i) => (
               <div key={i}>
                 <a href={g.href} target="_blank" rel="noopener noreferrer">
                   <img src={g.img} alt="" />
