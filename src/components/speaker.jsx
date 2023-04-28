@@ -22,8 +22,8 @@ const List = [
     title: "Cofounder of Matters",
   },
   {
-    name: "Laurence Ion",
-    title: "Steward of Dealflow at VitaDAO",
+    name: "Cat-thru",
+    title: "Core member of VitaDAO",
     line: 2,
   },
   {
@@ -44,12 +44,20 @@ const List = [
     line: 2,
   },
   {
+    name: "Aman",
+    title: "Community leader of DAOStar",
+  },
+  {
     name: "Jake Hartnell",
     title: "DAO DAO Founder",
   },
   {
     name: "Suji Yan",
     title: "Founder of Mask Network",
+  },
+  {
+    name: "Chika",
+    title: "Afropolitan",
   }
 ];
 
