@@ -37,9 +37,9 @@ export default function About() {
             exploration and future of DAOs and Network States. Contribute your
             insights by participating in speeches and panel discussions.
           </p>
-          <p className="title" onClick={jump}>
+          <p className="title">
             <span>Lead a Workshop</span>
-            <img src={Arrow} alt="" />
+            <a target="_blank" href='https://forms.gle/Z4JPpTqZ1kZVHTxL6'><img src={Arrow} alt="" /></a>
           </p>
           <p>
             If you are a curator, facilitator, or DAO tool entrepreneur eager to
@@ -52,9 +52,9 @@ export default function About() {
             and tools, and AIGC projects. Aid investors in identifying
             entrepreneurs who are dedicated to paradigm shifts.
           </p>
-          <p className="title" onClick={jump}>
+          <p className="title">
             <span>Join Us As a Sponsor & Strategic Partners</span>{" "}
-            <img src={Arrow} alt="" />
+            <a href="mailto:dao.montenegro@seedao.info"><img src={Arrow} alt="" /></a>
           </p>
           <p>
             We will offer various benefits in Event Engagement and Brand
@@ -89,7 +89,7 @@ export default function About() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Work shop Application
+              Workshop Application
             </a>
             <span className="symbol"> | </span>
             <a
@@ -104,7 +104,7 @@ export default function About() {
         <CotactPart>
           <LinePart>
             <Title>Contact</Title>
-            <ContactText>dao.montenegro@seedao.info</ContactText>
+            <a href="mailto:dao.montenegro@seedao.info"><ContactText>dao.montenegro@seedao.info</ContactText></a>
           </LinePart>
           <LinePart>
             <Title>Social Media</Title>

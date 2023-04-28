@@ -3,6 +3,7 @@ import Agenda from "./components/agenda";
 import Banner from "./components/banner";
 import Speaker from "./components/speaker";
 import EventDetail from "./components/event";
+import PartiesDetail from "./components/parties";
 import useMediaQuery from "./hooks/useMediaQuery";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <>
       <Banner sm={sm} />
       <EventDetail sm={sm} />
+      <PartiesDetail sm={sm} />
       <Agenda sm={sm} />
       <Speaker sm={sm} />
       <About sm={sm} />

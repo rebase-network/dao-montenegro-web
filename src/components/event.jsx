@@ -3,70 +3,6 @@ import EventImg01 from "../assets/event01.png";
 import EventImg02 from "../assets/event02.png";
 import LocationIcon from "../assets/location.svg";
 import TimeIcon from "../assets/time.svg";
-import RebaseIcon from "../assets/rebase_logo.svg";
-import SeeDAOIcon from "../assets/seedao_logo.svg";
-
-const group1 = [
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
-];
-
-const group2 = [
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
-  {
-    img: SeeDAOIcon,
-    href: "",
-  },
-];
 
 export default function EventDetail() {
 
@@ -92,61 +28,6 @@ export default function EventDetail() {
         <img src={EventImg01} alt="" />
         <img src={EventImg02} alt="" className="circle" />
       </ImgBox>
-      <IntroBox>
-        <li>
-          <p className="title"> Initiating Organization: SeeDAO </p>
-          <LogoBox>
-            {group1.map((g, i) => (
-              <div key={i}>
-                <a href={g.href} target="_blank" rel="noopener noreferrer">
-                  <img src={g.img} alt="" />
-                </a>
-              </div>
-            ))}
-          </LogoBox>
-          {/* <div className="introContent">
-            <span>
-              <img src={SeeDAOIcon} alt="" />
-            </span>
-            <p>
-              SeeDAO is a network polis based on blockchain. Its mission is to
-              connect 1 million crypto nomads and help build “connection, flow,
-              exchange, and freedom” among community members. To this end,
-              SeeDAO keeps launching Web3 public goods for the Chinese-speaking
-              world, incubating the basic tools of DAO, building IRL network and
-              helping more people live in DAO.
-            </p>
-          </div> */}
-        </li>
-        <li>
-          <p className="title">Co-organizer: Rebase </p>
-          <LogoBox>
-            {group2.map((g, i) => (
-              <div key={i}>
-                <a href={g.href} target="_blank" rel="noopener noreferrer">
-                  <img src={g.img} alt="" />
-                </a>
-              </div>
-            ))}
-          </LogoBox>
-        </li>
-        {/* <li>
-          <p className="title">Co-organizer: Rebase </p>
-          <div className="introContent">
-            <span>
-              <img src={RebaseIcon} alt="" />
-            </span>
-            <p>
-              SeeDAO is a network polis based on blockchain. Its mission is to
-              connect 1 million crypto nomads and help build “connection, flow,
-              exchange, and freedom” among community members. To this end,
-              SeeDAO keeps launching Web3 public goods for the Chinese-speaking
-              world, incubating the basic tools of DAO, building IRL network and
-              helping more people live in DAO.
-            </p>
-          </div>
-        </li> */}
-      </IntroBox>
     </EventBox>
   );
 }
@@ -156,7 +37,7 @@ const EventBox = styled.section`
   width: 100%;
   box-sizing: border-box;
   padding-inline: 6rem;
-  padding-block: 9rem 12rem;
+  padding-top: 12rem;
   p {
     margin: 0;
   }
