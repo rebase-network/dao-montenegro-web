@@ -12,9 +12,9 @@ function App() {
     <>
       <Banner sm={sm} />
       <EventDetail sm={sm} />
-      <PartiesDetail sm={sm} />
       <Agenda sm={sm} />
       <Speaker sm={sm} />
+      <PartiesDetail sm={sm} />
       <About sm={sm} />
     </>
   );
