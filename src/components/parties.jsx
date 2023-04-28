@@ -5,7 +5,8 @@ import LocationIcon from "../assets/location.svg";
 import TimeIcon from "../assets/time.svg";
 
 // hosts
-import SeeDAOIcon from "../assets/logos/seedao.png";
+// import SeeDAOIcon from "../assets/logos/seedao.png";
+import SeeDAOIcon from "../assets/logo_full.svg";
 import BuilderDAOIcon from "../assets/logos/builder_dao.svg";
 import MaskIcon from "../assets/logos/mask.svg";
 
@@ -206,6 +207,9 @@ const ImgBox = styled.div`
 const IntroBox = styled.ul`
   margin-top: 11rem;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
   p.title {
     font-family: "Inter";
     font-style: normal;
@@ -248,12 +252,25 @@ const LogoBox = styled.div`
   align-items: stretch;
   > div {
     width: calc(20% - 2rem);
+    height: 11.2rem;
     margin-inline: 1rem;
     margin-bottom: 1.5rem;
-
-    img {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    a {
+      display: block;
       width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
     @media (max-width: 780px) {
       width: calc(25% - 2rem);
     }
