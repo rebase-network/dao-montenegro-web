@@ -6,7 +6,70 @@ import TimeIcon from "../assets/time.svg";
 import RebaseIcon from "../assets/rebase_logo.svg";
 import SeeDAOIcon from "../assets/seedao_logo.svg";
 
+const group1 = [
+  {
+    img: SeeDAOIcon,
+    href: "",
+  },
+  {
+    img: SeeDAOIcon,
+    href: "",
+  },
+  {
+    img: SeeDAOIcon,
+    href: "",
+  },
+  {
+    img: SeeDAOIcon,
+    href: "",
+  },
+  {
+    img: SeeDAOIcon,
+    href: "",
+  },
+  {
+    img: SeeDAOIcon,
+    href: "",
+  },
+  {
+    img: SeeDAOIcon,
+    href: "",
+  },
+];
+
+const group2 = [
+  {
+    img: SeeDAOIcon,
+    href: "",
+  },
+  {
+    img: SeeDAOIcon,
+    href: "",
+  },
+  {
+    img: SeeDAOIcon,
+    href: "",
+  },
+  {
+    img: SeeDAOIcon,
+    href: "",
+  },
+  {
+    img: SeeDAOIcon,
+    href: "",
+  },
+  {
+    img: SeeDAOIcon,
+    href: "",
+  },
+  {
+    img: SeeDAOIcon,
+    href: "",
+  },
+];
+
 export default function EventDetail() {
+
   return (
     <EventBox>
       <Content>
@@ -32,7 +95,16 @@ export default function EventDetail() {
       <IntroBox>
         <li>
           <p className="title"> Initiating Organization: SeeDAO </p>
-          <div className="introContent">
+          <LogoBox>
+            {group1.map((g, i) => (
+              <div key={i}>
+                <a href={g.href} target="_blank" rel="noopener noreferrer">
+                  <img src={g.img} alt="" />
+                </a>
+              </div>
+            ))}
+          </LogoBox>
+          {/* <div className="introContent">
             <span>
               <img src={SeeDAOIcon} alt="" />
             </span>
@@ -44,9 +116,21 @@ export default function EventDetail() {
               world, incubating the basic tools of DAO, building IRL network and
               helping more people live in DAO.
             </p>
-          </div>
+          </div> */}
         </li>
         <li>
+          <p className="title">Co-organizer: Rebase </p>
+          <LogoBox>
+            {group2.map((g, i) => (
+              <div key={i}>
+                <a href={g.href} target="_blank" rel="noopener noreferrer">
+                  <img src={g.img} alt="" />
+                </a>
+              </div>
+            ))}
+          </LogoBox>
+        </li>
+        {/* <li>
           <p className="title">Co-organizer: Rebase </p>
           <div className="introContent">
             <span>
@@ -61,7 +145,7 @@ export default function EventDetail() {
               helping more people live in DAO.
             </p>
           </div>
-        </li>
+        </li> */}
       </IntroBox>
     </EventBox>
   );
@@ -139,6 +223,7 @@ const IntroBox = styled.ul`
     font-size: 6.4rem;
     line-height: 7.7rem;
     margin-bottom: 2.5rem;
+    text-align: center;
   }
   li {
     .introContent {
@@ -163,6 +248,24 @@ const IntroBox = styled.ul`
         font-size: 14px;
         line-height: 19px;
       }
+    }
+  }
+`;
+const LogoBox = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+  > div {
+    width: calc(20% - 2rem);
+    margin-inline: 1rem;
+    margin-bottom: 1.5rem;
+
+    img {
+      width: 100%;
+    }
+    @media (max-width: 780px) {
+      width: calc(25% - 2rem);
     }
   }
 `;

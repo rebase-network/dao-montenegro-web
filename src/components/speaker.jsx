@@ -4,24 +4,48 @@ import SpeakerTitle from "../assets/speaker_title.png";
 
 const List = [
   {
-    name: "name name",
-    title: "title",
+    name: "Shrey Jain",
+    title: "Applied Scientist @Micro Soft Research",
+    line: 2,
   },
   {
-    name: "name name",
-    title: "title",
+    name: "Sheen Hu",
+    title: "CEO of MXC DAO",
   },
   {
-    name: "name name",
-    title: "title",
+    name: "黄孙权",
+    title: "台湾大学建筑学博士 </br> 策展人，艺术行动者",
+    line: 2,
   },
   {
-    name: "name name",
-    title: "title",
+    name: "刘果",
+    title: "Cofounder of Matters",
   },
   {
-    name: "name name",
-    title: "title",
+    name: "Laurence Ion",
+    title: "Steward of Dealflow at VitaDAO",
+    line: 2,
+  },
+  {
+    name: "Michael",
+    title: "Humanity-Cofounder",
+  },
+  {
+    name: "Audrey Tang",
+    title: "Founder of DRK Lab",
+  },
+  {
+    name: "Han Tang",
+    title: "Founder of SeeDAO",
+  },
+  {
+    name: "Dr.Sun",
+    title: "Sociologist, comupage initiator",
+    line: 2,
+  },
+  {
+    name: "Oliz",
+    title: "DAO DAO Founder",
   },
 ];
 
@@ -40,7 +64,9 @@ export default function Speaker() {
             <div className="name">
               <span>{l.name}</span>
             </div>
-            <div className="title">{l.title}</div>
+            <div className={l.line === 2 ? "multi title" : "title"}>
+              <span dangerouslySetInnerHTML={{ __html: l.title }}></span>
+            </div>
           </li>
         ))}
       </CardBox>
@@ -85,13 +111,17 @@ const CardBox = styled.ul`
   padding: 5rem 6rem 8.5rem;
   background: #f98845;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   flex-wrap: wrap;
+  align-items: stretch;
 
   box-sizing: border-box;
   li {
-    height: 17.9rem;
+    width: calc(25% - 2rem);
+    margin-inline: 1rem;
     margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
     div {
       border: 2px solid #000000;
       &.title {
@@ -114,14 +144,24 @@ const CardBox = styled.ul`
       font-family: "Inter";
       font-style: normal;
       font-weight: 500;
-      font-size: 3.2rem;
-      line-height: 7.2rem;
-      height: 7.2rem;
+      font-size: 2.2rem;
+      min-height: 7.2rem;
+      flex: 1;
+      justify-content: center;
+      /* span {
+        line-height: 7.2rem;
+      }
+      &.multi span {
+        line-height: 3.4rem;
+      } */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-block: 5px;
     }
-    width: calc(25% - 20px);
     @media (max-width: 780px) {
+      width: calc(50% - 2rem);
       margin-bottom: 20px;
-      width: 24%;
     }
   }
 `;
