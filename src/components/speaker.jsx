@@ -44,9 +44,13 @@ const List = [
     line: 2,
   },
   {
-    name: "Oliz",
+    name: "Jake Hartnell",
     title: "DAO DAO Founder",
   },
+  {
+    name: "Suji Yan",
+    title: "Founder of Mask Network",
+  }
 ];
 
 export default function Speaker() {
