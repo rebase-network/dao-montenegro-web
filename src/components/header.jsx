@@ -47,16 +47,16 @@ export default function Header({ sm }) {
         <Nav sm={sm}>
           <li onClick={() => jump("agenda")}>Agenda</li>
           <li onClick={() => jump("speaker")}>Speakers</li>
+          <li onClick={() => jump("sponsor")}>Sponsorship</li>
           <li>
             <a
-              href="https://drive.google.com/file/d/1cn8f5L8sh-BsSbca5FUdeWej7t3FGiWX/view?usp=share_link"
+              href="https://www.eventbrite.hk/e/dao-montenegro-tickets-626996241637"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Sponsorship
+              Tickets
             </a>
           </li>
-          <li>Tickets</li>
         </Nav>
       )}
     </HeaderBox>

@@ -22,7 +22,7 @@ export default function EventDetail() {
             <img src={TimeIcon} alt="" />
           </span>
 
-          <span>May 20</span>
+          <span>May 22</span>
         </div>
       </Content>
       <ImgBox>
@@ -123,7 +123,7 @@ const ImgBox = styled.div`
   .circle {
     position: absolute;
     right: 1.2rem;
-    bottom: 1.12rem;
+    bottom: 12.3rem;
     width: unset;
     height: 56.9rem;
   }

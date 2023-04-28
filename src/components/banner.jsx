@@ -17,16 +17,34 @@ export default function Banner({ sm }) {
           <img src={TitleSvg} alt="" />
         </p>
         <p className="subtitle">new organization, new world</p>
-        <CallButton>call to action</CallButton>
+        <CallButton
+          href="https://www.eventbrite.hk/e/dao-montenegro-tickets-626996241637"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          call to action
+        </CallButton>
         {!sm && (
           <SocialBox>
-            <a href="">
+            <a
+              href="https://t.me/theseedao"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={TGIcon} alt="" />
             </a>
-            <a href="">
+            <a
+              href="https://twitter.com/see_dao"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={TwitterIcon} alt="" />
             </a>
-            <a href="">
+            <a
+              href="mailto:dao.montenegro@seedao.info"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={EmailIcon} alt="" />
             </a>
           </SocialBox>
@@ -89,7 +107,7 @@ const Content = styled.div`
   }
 `;
 
-const CallButton = styled.span`
+const CallButton = styled.a`
   margin-block: 6.6rem;
   cursor: pointer;
   width: 323px;
@@ -104,6 +122,9 @@ const CallButton = styled.span`
   color: #39ffb8;
   display: inline-block;
   text-align: center;
+  &:hover {
+    color: #39ffb8;
+  }
   @media (max-width: 780px) {
     margin-bottom: 14rem;
     margin-top: 12rem;

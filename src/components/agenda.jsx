@@ -19,12 +19,15 @@ export default function Agenda() {
               <span className="text">Part 1</span>
               <span className="shape"></span>
             </Title>
+            <p className="title">
+              DAO: A New Form of Organizational Structures
+            </p>
             <p>
-              DAO: A New Form of Organizational Structures The Meaning of Humans
-              in DAOs, Can DAOs Solve the Problem of Massive Unemployment Caused
-              by AGI? The Application of DAOs in Different Social Organizations,
-              Effective Governance Structures, DAO Business Models, Digital
-              Cooperatives, and Community Based Learning
+              The Meaning of Humans in DAOs, Can DAOs Solve the Problem of
+              Massive Unemployment Caused by AGI? The Application of DAOs in
+              Different Social Organizations, Effective Governance Structures,
+              DAO Business Models, Digital Cooperatives, and Community Based
+              Learning
             </p>
           </Part>
           <Part>
@@ -32,9 +35,10 @@ export default function Agenda() {
               <span className="text">Part 2</span>
               <span className="shape"></span>
             </Title>
+            <p className="title">A Philosophical Perspective to DAO Tools</p>
             <p>
-              A Philosophical Perspective to DAO Tools DAO Management Tools,
-              AI’s Impact on DAO Tools, New World Maps, and Vertical DAO Tools
+              DAO Management Tools, AI’s Impact on DAO Tools, New World Maps,
+              and Vertical DAO Tools
             </p>
           </Part>
           <Part>
@@ -42,10 +46,10 @@ export default function Agenda() {
               <span className="text">Part 3</span>
               <span className="shape"></span>
             </Title>
+            <p className="title">Crypto Nomads and Network States</p>
             <p>
-              Crypto Nomads and Network States Global Geopolitical Crisis; the
-              Emergence of Crypto Nomads; A Neutral Web; Network States;
-              Localization and Globalization
+              Global Geopolitical Crisis; the Emergence of Crypto Nomads; A
+              Neutral Web; Network States; Localization and Globalization
             </p>
           </Part>
           <Part>
@@ -53,11 +57,11 @@ export default function Agenda() {
               <span className="text">Part 4</span>
               <span className="shape"></span>
             </Title>
+            <p className="title">Creator Economy in the Post-GPT Era</p>
             <p>
-              Creator Economy in the Post-GPT Era AIGC’s Impact on Creator
-              Economy; Creator Cooperatives; What kind of content will we
-              subscribe to in 10 years? Machine Production and Machine Reading;
-              Universal Basic Income
+              AIGC’s Impact on Creator Economy; Creator Cooperatives; What kind
+              of content will we subscribe to in 10 years? Machine Production
+              and Machine Reading; Universal Basic Income
             </p>
           </Part>
         </Container>
@@ -121,6 +125,10 @@ const Part = styled.div`
     font-weight: 400;
     font-size: 3.2rem;
     line-height: 4.5rem;
+    margin-top: 0;
+  }
+  p.title {
+    margin-bottom: 0;
   }
   @media (max-width: 780px) {
     p {

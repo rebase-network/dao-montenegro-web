@@ -5,10 +5,18 @@ import TwitterIcon from "../assets/tw.svg";
 import TGIcon from "../assets/tg.svg";
 import EmailIcon from "../assets/email.svg";
 import useMediaQuery from "../hooks/useMediaQuery";
+import Arrow from "../assets/arrow.svg";
 
 export default function About() {
 
   const sm = useMediaQuery("1280px");
+
+  const jump = () => {
+    const anchorElement = document.getElementById("footer");
+    if (anchorElement) {
+      anchorElement.scrollIntoView({ block: "start", behavior: "smooth" });
+    }
+  };
 
   return (
     <SectionStyled>
@@ -19,7 +27,7 @@ export default function About() {
         </div>
         <JoinContent className={sm ? "small" : ""}>
           <p className="title">
-            Join Us as a Content Curator or Community Contributor:{" "}
+            Join Us as a Content Curator or Community Contributor
           </p>
           <p>
             Join the collaborative content creation for any of the four sections
@@ -29,7 +37,10 @@ export default function About() {
             exploration and future of DAOs and Network States. Contribute your
             insights by participating in speeches and panel discussions.
           </p>
-          <p className="title">Lead a Workshop:</p>
+          <p className="title" onClick={jump}>
+            <span>Lead a Workshop</span>
+            <img src={Arrow} alt="" />
+          </p>
           <p>
             If you are a curator, facilitator, or DAO tool entrepreneur eager to
             engage in deeper discussions and co-creation with attendees, we
@@ -41,7 +52,10 @@ export default function About() {
             and tools, and AIGC projects. Aid investors in identifying
             entrepreneurs who are dedicated to paradigm shifts.
           </p>
-          <p className="title">Join Us As a Sponsor &Strategic Partners</p>
+          <p className="title" onClick={jump}>
+            <span>Join Us As a Sponsor & Strategic Partners</span>{" "}
+            <img src={Arrow} alt="" />
+          </p>
           <p>
             We will offer various benefits in Event Engagement and Brand
             Exposure to our Sponsors & Strategic Partners, depending on the
@@ -50,17 +64,41 @@ export default function About() {
           </p>
         </JoinContent>
       </JoinBox>
-      <Footer>
+      <Footer id="footer">
         <Part>
           <Title>About</Title>
           <Text>
-            <span>Registration (Coming soon)</span>
+            <a
+              href="https://www.eventbrite.hk/e/dao-montenegro-tickets-626996241637"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Registration
+            </a>
             <span className="symbol"> | </span>
-            <span>Content Curator or Community Contributor Application</span>
+            <a
+              href="https://forms.gle/STsR4Xwj7ZGVvz1J8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Speaker
+            </a>
             <span className="symbol"> | </span>
-            <span>Speaker or Work shop Application</span>
+            <a
+              href="https://forms.gle/Z4JPpTqZ1kZVHTxL6"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Work shop Application
+            </a>
             <span className="symbol"> | </span>
-            <span>Sponsorship</span>
+            <a
+              href="https://drive.google.com/file/d/1cn8f5L8sh-BsSbca5FUdeWej7t3FGiWX/view?usp=share_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Sponsorship
+            </a>
           </Text>
         </Part>
         <CotactPart>
@@ -71,13 +109,25 @@ export default function About() {
           <LinePart>
             <Title>Social Media</Title>
             <SocialBox>
-              <a href="">
-                <img src={TwitterIcon} alt="" />
-              </a>
-              <a href="">
+              <a
+                href="https://t.me/theseedao"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={TGIcon} alt="" />
               </a>
-              <a href="">
+              <a
+                href="https://twitter.com/see_dao"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={TwitterIcon} alt="" />
+              </a>
+              <a
+                href="mailto:dao.montenegro@seedao.info"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={EmailIcon} alt="" />
               </a>
             </SocialBox>
@@ -137,6 +187,16 @@ const JoinContent = styled.div`
   p.title {
     font-weight: 700;
     color: #ff8072;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    img {
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-left: 8px;
+      position: relative;
+      top: .1rem;
+    }
   }
   @media (max-width: 1280px) {
     padding-right: 0;
@@ -216,6 +276,7 @@ const Text = styled.div`
   line-height: 5rem;
   .symbol {
     color: #296af1;
+    margin-inline: 10px;
   }
   @media (max-width: 780px) {
     font-size: 14px;
