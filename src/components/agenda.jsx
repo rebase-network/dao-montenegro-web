@@ -101,6 +101,7 @@ const Header = styled.div`
   }
   .title {
     height: 11.6rem;
+    width: auto;
   }
 `;
 
