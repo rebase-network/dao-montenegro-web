@@ -27,7 +27,9 @@ import OdailyIcon from "../assets/logos/odaily.png";
 import PANewsIcon from "../assets/logos/panews.png";
 import ChaincatcherIcon from "../assets/logos/chaincatcher.png";
 import CointimeIcon from "../assets/logos/cointime.png";
-// import BlockTempoIcon from "../assets/logos/blocktempo.png";
+import BlockTempoIcon from "../assets/logos/blocktempo.png";
+import OrangePaperIcon from "../assets/logos/orangepaper.png";
+import WushuoIcon from "../assets/logos/wulogo.png";
 
 
 // communities
@@ -127,18 +129,24 @@ const medias = [
     href: "",
     lv: 2,
   },
-  // {
-  //   name: "BlockTempo",
-  //   img: SeeDAOIcon,
-  //   href: "",
-  //   lv: 1,
-  // },
-  // {
-  //   name: "橙皮书",
-  //   img: SeeDAOIcon,
-  //   href: "",
-  //   lv: 1,
-  // }
+  {
+    name: "BlockTempo",
+    img: BlockTempoIcon,
+    href: "",
+    lv: 1,
+  },
+  {
+    name: "橙皮书",
+    img: OrangePaperIcon,
+    href: "",
+    lv: 1,
+  },
+  {
+    name: "吴说区块链",
+    img: WushuoIcon,
+    href: "",
+    lv: 1,
+  }
 ]
 
 const communities = [
