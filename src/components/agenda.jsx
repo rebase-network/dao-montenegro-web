@@ -177,6 +177,7 @@ const Part = styled.div`
   }
   p.title {
     margin-bottom: 0;
+    font-weight: 600;
   }
   @media (max-width: 780px) {
     p {
