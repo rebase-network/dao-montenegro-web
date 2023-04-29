@@ -36,8 +36,7 @@ export default function EventDetail() {
 const EventBox = styled.section`
   width: 100%;
   box-sizing: border-box;
-  padding-inline: 6rem;
-  padding-top: 12rem;
+  padding: 12rem 6rem;
   p {
     margin: 0;
   }
