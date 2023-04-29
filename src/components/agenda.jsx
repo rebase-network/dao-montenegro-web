@@ -20,14 +20,17 @@ export default function Agenda() {
               <span className="shape"></span>
             </Title>
             <p className="title">
-              DAO: A New Form of Organizational Structures
+              Transhumanism
             </p>
             <p>
-              The Meaning of Humans in DAOs, Can DAOs Solve the Problem of
-              Massive Unemployment Caused by AGI? The Application of DAOs in
-              Different Social Organizations, Effective Governance Structures,
-              DAO Business Models, Digital Cooperatives, and Community Based
-              Learning
+              Is the human body a machine that can be controlled and repaired by technology?
+
+              Is it possible for us to "live up to 1,000 years" and possess computing power that is close to god-like through constant leaps in scientific and technological advancements?
+
+              Can we use increasingly advanced science and technology to enhance our mental, physical, and cognitive abilities, overcome disabilities, diseases, pain, aging, and death?
+
+              Let's discuss the future of transhumanism by exploring the paths pointed to by AGI, Longevity, Network States, and Crypto.
+
             </p>
           </Part>
           <Part>
@@ -35,10 +38,16 @@ export default function Agenda() {
               <span className="text">Part 2</span>
               <span className="shape"></span>
             </Title>
-            <p className="title">A Philosophical Perspective to DAO Tools</p>
+            <p className="title">
+              Public Goods and DeSci
+            </p>
             <p>
-              DAO Management Tools, AI’s Impact on DAO Tools, New World Maps,
-              and Vertical DAO Tools
+              What is the current status of public goods in the Ethereum ecosystem? What changes have occurred in its fundraising methods?
+
+              Why has DeSci (decentralized scientific network) made rapid progress in the field of biology? Could a new global academic network be formed based on blockchain technology in the future? Could the emergence of AGI accelerate the organization and rapid development of academic networks?
+
+              We will invite core KOLs from Gitcoin, NounsDAO, and the DeSci field to introduce the latest developments in the fields of Public Goods and DeSci.
+
             </p>
           </Part>
           <Part>
@@ -46,10 +55,18 @@ export default function Agenda() {
               <span className="text">Part 3</span>
               <span className="shape"></span>
             </Title>
-            <p className="title">Crypto Nomads and Network States</p>
+            <p className="title">
+              DAO: A New Form of Organizational Structure
+            </p>
             <p>
-              Global Geopolitical Crisis; the Emergence of Crypto Nomads; A
-              Neutral Web; Network States; Localization and Globalization
+              Can DAOs solve the problem of mass unemployment caused by AI and help people find new value in social coordinates?
+
+              How can we connect different DAOs to achieve cross-border and cross-domain resource integration and optimization, to facilitate the realization of common visions and provide more differentiated services?
+
+              What are the development trends of DAOs in different public chain ecosystems such as Ethereum, Bitcoin, and Cosmos?
+
+              Let's explore new organizational schemes under geopolitical crises and the productivity revolution brought about by AI, and discuss the application of DAOs in different social organizations, effective governance structures, and DAO business models.
+
             </p>
           </Part>
           <Part>
@@ -57,11 +74,41 @@ export default function Agenda() {
               <span className="text">Part 4</span>
               <span className="shape"></span>
             </Title>
-            <p className="title">Creator Economy in the Post-GPT Era</p>
+            <p className="title">
+              Philosophical Perspectives on DAO Tools
+            </p>
             <p>
-              AIGC’s Impact on Creator Economy; Creator Cooperatives; What kind
-              of content will we subscribe to in 10 years? Machine Production
-              and Machine Reading; Universal Basic Income
+              The development of DAO has called forth new DAO tools, and these new DAO tools have also shaped people's imaginations of DAO.
+
+              In this section, we will discuss the DAO toolset, the influence of AI on DAO tools, and how Web3 applications can achieve mass adoption through DAOs. We will focus on the philosophical perspectives of the products built by these DAO tools: what kind of organization do we hope to create with these tools?
+            </p>
+          </Part>
+          <Part>
+            <Title>
+              <span className="text">Part 5</span>
+              <span className="shape"></span>
+            </Title>
+            <p className="title">
+              Digital Nomads and Network States
+            </p>
+            <p>
+              How can we create a new order through network states and protect ordinary people from the adverse effects of geopolitical conflicts by providing more choices?
+
+              How can we promote communication and cooperation among people from different cultures, languages, and backgrounds in digital city-states and achieve a truly global village?
+
+              What is the progress of the vibrant network state practices in Africa?
+            </p>
+          </Part>
+          <Part>
+            <Title>
+              <span className="text">Part 6</span>
+              <span className="shape"></span>
+            </Title>
+            <p className="title">
+              Creator Economy in the Post-GPT Era
+            </p>
+            <p>
+              In this section, we will discuss the impact of AIGC on the creator economy, creator cooperatives, what kind of content we will subscribe to in 10 years, machine production and machine reading, and the survival difficulties and coping strategies that GPT has brought to creators.
             </p>
           </Part>
         </Container>
