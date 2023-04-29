@@ -58,9 +58,7 @@ const coorganizers = [
 ];
 
 const sponsors = [
-
 ];
-
 
 const medias = [
   {
