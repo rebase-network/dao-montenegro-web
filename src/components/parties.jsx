@@ -140,7 +140,7 @@ export default function PartiesDetail() {
       <IntroBox>
         <li>
           <p className="title"> Organizers </p>
-          <LogoBox>
+          <LogoBox className="big">
             {hosts.map((g, i) => (
               <div key={i}>
                 <a href={g.href} target="_blank" rel="noopener noreferrer">
@@ -169,17 +169,21 @@ export default function PartiesDetail() {
           <LogoBox>
             {communities.map((g, i) => (
               <div key={i}>
-                <a href={g.href} target="_blank" rel="noopener noreferrer">
+                {g.href ? (
+                  <a href={g.href} target="_blank" rel="noopener noreferrer">
+                    <img src={g.img} alt="" />
+                  </a>
+                ) : (
                   <img src={g.img} alt="" />
-                </a>
+                )}
               </div>
             ))}
           </LogoBox>
         </li> */}
 
-        <li id="sponsor">
+        <li>
           <p className="title">Co-organizers </p>
-          <LogoBox>
+          <LogoBox className="medium">
             {coorganizers.map((g, i) => (
               <div key={i}>
                 <a href={g.href} target="_blank" rel="noopener noreferrer">
@@ -192,28 +196,36 @@ export default function PartiesDetail() {
 
         <li>
           <p className="title">Medias </p>
-          <LogoBox>
+          <SmallLogoBox>
             {medias.map((g, i) => (
               <div key={i}>
-                <a href={g.href} target="_blank" rel="noopener noreferrer">
+                {g.href ? (
+                  <a href={g.href} target="_blank" rel="noopener noreferrer">
+                    <img src={g.img} alt="" />
+                  </a>
+                ) : (
                   <img src={g.img} alt="" />
-                </a>
+                )}
               </div>
             ))}
-          </LogoBox>
+          </SmallLogoBox>
         </li>
 
         <li>
           <p className="title">Communities </p>
-          <LogoBox>
+          <SmallLogoBox>
             {communities.map((g, i) => (
               <div key={i}>
-                <a href={g.href} target="_blank" rel="noopener noreferrer">
+                {g.href ? (
+                  <a href={g.href} target="_blank" rel="noopener noreferrer">
+                    <img src={g.img} alt="" />
+                  </a>
+                ) : (
                   <img src={g.img} alt="" />
-                </a>
+                )}
               </div>
             ))}
-          </LogoBox>
+          </SmallLogoBox>
         </li>
         {/* <li>
           <p className="title">Co-organizer: Rebase </p>
@@ -346,20 +358,21 @@ const LogoBox = styled.div`
   align-items: stretch;
   > div {
     width: calc(20% - 2rem);
-    height: 11.2rem;
+    height: 13.2rem;
     margin-inline: 1rem;
     margin-bottom: 1.5rem;
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     a {
       display: block;
       width: 100%;
       height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
+
     img {
       max-width: 100%;
       max-height: 100%;
@@ -368,5 +381,34 @@ const LogoBox = styled.div`
     @media (max-width: 780px) {
       width: calc(25% - 2rem);
     }
+  }
+  &.big > div {
+    width: 29.6rem;
+    height: 13.6rem;
+    margin-inline: 3rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+
+    @media (max-width: 780px) {
+      border-radius: 6px;
+    }
+  }
+  &.medium > div {
+    width: calc(22% - 2rem);
+  }
+`;
+
+
+const SmallLogoBox = styled(LogoBox)`
+  justify-content: center;
+
+  > div {
+    width: calc(16% - 2rem);
+    height: 8rem;
+    margin-inline: 3rem;
+    background-color: transparent;
   }
 `;
