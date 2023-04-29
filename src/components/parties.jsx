@@ -13,6 +13,13 @@ import MaskIcon from "../assets/logos/mask.svg";
 import RebaseIcon from "../assets/logos/rebase.png";
 
 // sponsors
+import MXCIcon from "../assets/logos/mxc.png";
+import GreenpillIcon from "../assets/logos/greenpill.png";
+
+// content curators
+import ThreeWW3Icon from "../assets/logos/3ww3.png";
+import MoledaoIcon from "../assets/logos/moledao.png";
+
 
 // medias
 import ForesightIcon from "../assets/logos/foresight.png";
@@ -27,7 +34,6 @@ import CointimeIcon from "../assets/logos/cointime.png";
 import DenglianIcon from "../assets/logos/denglian.png";
 import ECNIcon from "../assets/logos/ecn.png";
 import BfrenzIcon from "../assets/logos/bfrenz.png";
-import MoledaoIcon from "../assets/logos/moledao.png";
 import KNN3Icon from "../assets/logos/KNN3.png";
 
 
@@ -58,6 +64,30 @@ const coorganizers = [
 ];
 
 const sponsors = [
+  {
+    name: "MXC",
+    img: MXCIcon,
+    href: "https://www.mxc.com/",
+  },
+  {
+    name:"Greenpill",
+    img: GreenpillIcon,
+    href: "https://greenpill.io/",
+  },
+];
+
+const content_curators = [
+  {
+    name: "亚非拉 Web3 研究院",
+    img: ThreeWW3Icon,
+    href: ""
+  },
+  {
+    name: "Moledao",
+    img: MoledaoIcon,
+    href: "",
+    lv: 2,
+  },
 ];
 
 const medias = [
@@ -119,12 +149,6 @@ const communities = [
     lv: 2,
   },
   {
-    name: "Moledao",
-    img: MoledaoIcon,
-    href: "",
-    lv: 2,
-  },
-  {
     name: "KNN3",
     img: KNN3Icon,
     href: "",
@@ -139,7 +163,7 @@ export default function PartiesDetail() {
     <PartiesBox>
       <IntroBox>
         <li>
-          <p className="title"> Organizers </p>
+          <p className="title">ORGANIZERS</p>
           <LogoBox className="big">
             {hosts.map((g, i) => (
               <div key={i}>
@@ -164,25 +188,10 @@ export default function PartiesDetail() {
           </div> */}
         </li>
 
-        {/* <li id="sponsor">
-          <p className="title">Sponsors </p>
-          <LogoBox>
-            {communities.map((g, i) => (
-              <div key={i}>
-                {g.href ? (
-                  <a href={g.href} target="_blank" rel="noopener noreferrer">
-                    <img src={g.img} alt="" />
-                  </a>
-                ) : (
-                  <img src={g.img} alt="" />
-                )}
-              </div>
-            ))}
-          </LogoBox>
-        </li> */}
+        
 
         <li>
-          <p className="title">Co-organizers </p>
+          <p className="title">CO-ORGANIZERS</p>
           <LogoBox className="medium">
             {coorganizers.map((g, i) => (
               <div key={i}>
@@ -194,8 +203,42 @@ export default function PartiesDetail() {
           </LogoBox>
         </li>
 
+        <li id="sponsor">
+          <p className="title">SPONSORS</p>
+          <LogoBox>
+            {sponsors.map((g, i) => (
+              <div key={i}>
+                {g.href ? (
+                  <a href={g.href} target="_blank" rel="noopener noreferrer">
+                    <img src={g.img} alt="" />
+                  </a>
+                ) : (
+                  <img src={g.img} alt="" />
+                )}
+              </div>
+            ))}
+          </LogoBox>
+        </li>
+
         <li>
-          <p className="title">Medias </p>
+          <p className="title">CONTENT CURATORS</p>
+          <SmallLogoBox>
+            {content_curators.map((g, i) => (
+              <div key={i}>
+                {g.href ? (
+                  <a href={g.href} target="_blank" rel="noopener noreferrer">
+                    <img src={g.img} alt="" />
+                  </a>
+                ) : (
+                  <img src={g.img} alt="" />
+                )}
+              </div>
+            ))}
+          </SmallLogoBox>
+        </li>
+
+        <li>
+          <p className="title">MEDIA PARTNERS</p>
           <SmallLogoBox>
             {medias.map((g, i) => (
               <div key={i}>
@@ -212,7 +255,7 @@ export default function PartiesDetail() {
         </li>
 
         <li>
-          <p className="title">Communities </p>
+          <p className="title">COMMUNITY SUPPORTERS</p>
           <SmallLogoBox>
             {communities.map((g, i) => (
               <div key={i}>
@@ -227,22 +270,7 @@ export default function PartiesDetail() {
             ))}
           </SmallLogoBox>
         </li>
-        {/* <li>
-          <p className="title">Co-organizer: Rebase </p>
-          <div className="introContent">
-            <span>
-              <img src={RebaseIcon} alt="" />
-            </span>
-            <p>
-              SeeDAO is a network polis based on blockchain. Its mission is to
-              connect 1 million crypto nomads and help build “connection, flow,
-              exchange, and freedom” among community members. To this end,
-              SeeDAO keeps launching Web3 public goods for the Chinese-speaking
-              world, incubating the basic tools of DAO, building IRL network and
-              helping more people live in DAO.
-            </p>
-          </div>
-        </li> */}
+        
       </IntroBox>
     </PartiesBox>
   );
