@@ -70,7 +70,7 @@ const sponsors = [
     href: "https://www.mxc.com/",
   },
   {
-    name:"Greenpill",
+    name: "Greenpill",
     img: GreenpillIcon,
     href: "https://greenpill.io/",
   },
@@ -121,18 +121,36 @@ const medias = [
     href: "",
     lv: 2,
   },
-  // {
-  //   name: "BlockTempo",
-  //   img: SeeDAOIcon,
-  //   href: "",
-  //   lv: 1,
-  // },
+  {
+    name: "BlockTempo",
+    img: SeeDAOIcon,
+    href: "",
+    lv: 1,
+  },
+  {
+    name: "橙皮书",
+    img: SeeDAOIcon,
+    href: "",
+    lv: 1,
+  }
 ]
 
 const communities = [
   {
-    name: "登链社区",
-    img: DenglianIcon,
+    name: "Deschool&Booth",
+    img: SeeDAOIcon,
+    href: "",
+    lv: 2,
+  },
+  {
+    name: "DAOlink",
+    img: SeeDAOIcon,
+    href: "",
+    lv: 2,
+  },
+  {
+    name: "Ensoul",
+    img: SeeDAOIcon,
     href: "",
     lv: 2,
   },
@@ -141,6 +159,12 @@ const communities = [
     img: ECNIcon,
     href: "",
     lv: 1,
+  },
+  {
+    name: "登链社区",
+    img: DenglianIcon,
+    href: "",
+    lv: 2,
   },
   {
     name: "bfrenz",
@@ -154,6 +178,25 @@ const communities = [
     href: "",
     lv: 2,
   },
+  {
+    name: "Social layer",
+    img: SeeDAOIcon,
+    href: "",
+    lv: 2,
+  },
+
+  {
+    name: "Web3GO",
+    img: SeeDAOIcon,
+    href: "",
+    lv: 2,
+  },
+  {
+    name: "Odyssey DAO",
+    img: SeeDAOIcon,
+    href: "",
+    lv: 2,
+  }
 ];
 
 
@@ -188,7 +231,7 @@ export default function PartiesDetail() {
           </div> */}
         </li>
 
-        
+
 
         <li>
           <p className="title">CO-ORGANIZERS</p>
@@ -270,7 +313,7 @@ export default function PartiesDetail() {
             ))}
           </SmallLogoBox>
         </li>
-        
+
       </IntroBox>
     </PartiesBox>
   );
