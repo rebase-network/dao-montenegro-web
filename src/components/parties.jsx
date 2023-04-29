@@ -337,7 +337,7 @@ const PartiesBox = styled.section`
   width: 100%;
   box-sizing: border-box;
   padding-inline: 6rem;
-  padding-bottom: 12rem;
+  padding-bottom: 2rem;
   p {
     margin: 0;
   }
