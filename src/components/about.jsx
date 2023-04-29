@@ -173,7 +173,7 @@ const JoinBox = styled.div`
 `;
 const JoinContent = styled.div`
   padding-right: 7rem;
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
 
   p {
     font-family: "Inter";
@@ -200,6 +200,7 @@ const JoinContent = styled.div`
   }
   @media (max-width: 1280px) {
     padding-right: 0;
+    padding-top: 3rem;
     p {
       font-size: 2.4rem;
     }
@@ -210,7 +211,7 @@ const JoinContent = styled.div`
       font-size: 14px;
       line-height: 19px;
     }
-  };
+  }
 `;
 
 const Footer = styled.footer`
