@@ -174,6 +174,14 @@ const CardBox = styled.ul`
     @media (max-width: 780px) {
       width: calc(50% - 2rem);
       margin-bottom: 20px;
+      @media (max-width: 780px) {
+        .name {
+          font-size: 16px;
+        }
+        .title {
+          font-size: 14px;
+        }
+      }
     }
   }
 `;
