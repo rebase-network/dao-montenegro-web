@@ -396,7 +396,9 @@ const LogoBox = styled.div`
     justify-content: center;
     align-items: center;
     a {
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100%;
       height: 100%;
     }
