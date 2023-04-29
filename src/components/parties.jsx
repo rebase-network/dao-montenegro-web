@@ -31,10 +31,16 @@ import CointimeIcon from "../assets/logos/cointime.png";
 
 
 // communities
-import DenglianIcon from "../assets/logos/denglian.png";
+import DeSchoolIcon from "../assets/logos/deschool.svg";
+import DAOLinkIcon from "../assets/logos/daolink.svg";
+// import EnsoulIcon from "../assets/logos/ensoul.svg";
 import ECNIcon from "../assets/logos/ecn.png";
+import DenglianIcon from "../assets/logos/denglian.png";
 import BfrenzIcon from "../assets/logos/bfrenz.png";
 import KNN3Icon from "../assets/logos/KNN3.png";
+// import SocialLayerIcon from "../assets/logos/social_layer.png";
+import Web3GoIcon from "../assets/logos/web3go.png";
+import OdysseyIcon from "../assets/logos/odyssey.png";
 
 
 const hosts = [
@@ -121,39 +127,39 @@ const medias = [
     href: "",
     lv: 2,
   },
-  {
-    name: "BlockTempo",
-    img: SeeDAOIcon,
-    href: "",
-    lv: 1,
-  },
-  {
-    name: "橙皮书",
-    img: SeeDAOIcon,
-    href: "",
-    lv: 1,
-  }
+  // {
+  //   name: "BlockTempo",
+  //   img: SeeDAOIcon,
+  //   href: "",
+  //   lv: 1,
+  // },
+  // {
+  //   name: "橙皮书",
+  //   img: SeeDAOIcon,
+  //   href: "",
+  //   lv: 1,
+  // }
 ]
 
 const communities = [
   {
     name: "Deschool&Booth",
-    img: SeeDAOIcon,
+    img: DeSchoolIcon,
     href: "",
     lv: 2,
   },
   {
     name: "DAOlink",
-    img: SeeDAOIcon,
+    img: DAOLinkIcon,
     href: "",
     lv: 2,
   },
-  {
-    name: "Ensoul",
-    img: SeeDAOIcon,
-    href: "",
-    lv: 2,
-  },
+  // {
+  //   name: "Ensoul",
+  //   img: SeeDAOIcon,
+  //   href: "",
+  //   lv: 2,
+  // },
   {
     name: "ECN以太坊中文社区",
     img: ECNIcon,
@@ -178,22 +184,21 @@ const communities = [
     href: "",
     lv: 2,
   },
-  {
-    name: "Social layer",
-    img: SeeDAOIcon,
-    href: "",
-    lv: 2,
-  },
-
+  // {
+  //   name: "Social layer",
+  //   img: SeeDAOIcon,
+  //   href: "",
+  //   lv: 2,
+  // },
   {
     name: "Web3GO",
-    img: SeeDAOIcon,
+    img: Web3GoIcon,
     href: "",
     lv: 2,
   },
   {
     name: "Odyssey DAO",
-    img: SeeDAOIcon,
+    img: OdysseyIcon,
     href: "",
     lv: 2,
   }
