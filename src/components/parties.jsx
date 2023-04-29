@@ -410,5 +410,10 @@ const SmallLogoBox = styled(LogoBox)`
     height: 8rem;
     margin-inline: 3rem;
     background-color: transparent;
+    margin-bottom: 5rem;
+
+    @media (max-width: 780px) {
+      width: calc(20% - 2rem);
+    }
   }
 `;
