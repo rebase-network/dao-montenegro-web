@@ -10,14 +10,14 @@ import BuilderDAOIcon from "../assets/logos/builder_dao.svg";
 import MaskIcon from "../assets/logos/mask.svg";
 
 // cohosts
-import RebaseIcon from "../assets/logos/rebase.png";
+import RebaseIcon from "../assets/logos/rebase.svg";
 
 // sponsors
-import MXCIcon from "../assets/logos/mxc.png";
+import MXCIcon from "../assets/logos/mxc.svg";
 import GreenpillIcon from "../assets/logos/greenpill.png";
 
 // content curators
-import ThreeWW3Icon from "../assets/logos/3ww3.png";
+import ThreeWW3Icon from "../assets/logos/3ww3.svg";
 import MoledaoIcon from "../assets/logos/moledao.png";
 
 
