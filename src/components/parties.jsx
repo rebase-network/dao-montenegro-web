@@ -49,6 +49,9 @@ import DeboxIcon from "../assets/logos/debox.png";
 import NftscanIcon from "../assets/logos/nftscan.png";
 import PfpdaoIcon from "../assets/logos/pfpdao.jpeg";
 import Web3mapIcon from "../assets/logos/web3map.png";
+import LxdaoIcon from "../assets/logos/lxdao.svg";
+import EnsoulIcon from "../assets/logos/ensoul.svg";
+import SocialLayerIcon from "../assets/logos/sociallayer.svg";
 
 
 const hosts = [
@@ -249,6 +252,24 @@ const communities = [
   {
     name: "Web3 Map",
     img: Web3mapIcon,
+    href: "",
+    lv: 2,
+  },
+  {
+    name: "LXDAO",
+    img: LxdaoIcon,
+    href: "",
+    lv: 2,
+  },
+  {
+    name: "Ensoul",
+    img: EnsoulIcon,
+    href: "",
+    lv: 2,
+  },
+  {
+    name: "Social Layer",
+    img: SocialLayerIcon,
     href: "",
     lv: 2,
   },
