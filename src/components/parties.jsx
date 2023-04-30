@@ -52,6 +52,7 @@ import Web3mapIcon from "../assets/logos/web3map.svg";
 import LxdaoIcon from "../assets/logos/lxdao.svg";
 import EnsoulIcon from "../assets/logos/ensoul.svg";
 import SocialLayerIcon from "../assets/logos/sociallayer.svg";
+import Web3camp from "../assets/logos/web3camp.svg";
 
 
 const hosts = [
@@ -270,6 +271,12 @@ const communities = [
   {
     name: "Social Layer",
     img: SocialLayerIcon,
+    href: "",
+    lv: 2,
+  },
+  {
+    name: "Web3Camp",
+    img: Web3camp,
     href: "",
     lv: 2,
   },
