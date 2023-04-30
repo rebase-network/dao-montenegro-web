@@ -43,6 +43,12 @@ import KNN3Icon from "../assets/logos/KNN3.png";
 // import SocialLayerIcon from "../assets/logos/social_layer.png";
 import Web3GoIcon from "../assets/logos/web3go.png";
 import OdysseyIcon from "../assets/logos/odyssey.png";
+import Seven06Icon from "../assets/logos/706.svg";
+import Cryptovoyage from "../assets/logos/cryptovoyage.png";
+import DeboxIcon from "../assets/logos/debox.png";
+import NftscanIcon from "../assets/logos/nftscan.png";
+import PfpdaoIcon from "../assets/logos/pfpdao.jpeg";
+import Web3mapIcon from "../assets/logos/web3map.png";
 
 
 const hosts = [
@@ -209,7 +215,43 @@ const communities = [
     img: OdysseyIcon,
     href: "",
     lv: 2,
-  }
+  },
+  {
+    name: "706",
+    img: Seven06Icon,
+    href: "",
+    lv: 2,
+  },
+  {
+    name: "Crypto Voyage",
+    img: Cryptovoyage,
+    href: "",
+    lv: 2,
+  },
+  {
+    name: "Debox",
+    img: DeboxIcon,
+    href: "",
+    lv: 2,
+  },
+  {
+    name: "NFTscan",
+    img: NftscanIcon,
+    href: "",
+    lv: 2,
+  },
+  {
+    name: "PFP DAO",
+    img: PfpdaoIcon,
+    href: "",
+    lv: 2,
+  },
+  {
+    name: "Web3 Map",
+    img: Web3mapIcon,
+    href: "",
+    lv: 2,
+  },
 ];
 
 
