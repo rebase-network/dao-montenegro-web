@@ -18,7 +18,7 @@ import GreenpillIcon from "../assets/logos/greenpill.png";
 
 // content curators
 import ThreeWW3Icon from "../assets/logos/3ww3.svg";
-import MoledaoIcon from "../assets/logos/moledao.png";
+import MoledaoIcon from "../assets/logos/moledao.svg";
 
 
 // medias
