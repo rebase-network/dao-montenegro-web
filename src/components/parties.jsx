@@ -64,7 +64,7 @@ const hosts = [
   {
     name: "BuilderDAO",
     img: BuilderDAOIcon,
-    href: "https://builderdao.io/",
+    href: "https://buidlerdao.xyz/",
   },
   {
     name: "Mask Network",
