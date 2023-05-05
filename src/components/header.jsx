@@ -111,7 +111,7 @@ const Nav = styled.ul`
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
 `;
 
