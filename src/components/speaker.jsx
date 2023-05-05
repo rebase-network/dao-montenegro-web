@@ -171,8 +171,7 @@ const CardBox = styled.ul`
   width: 100%;
   background: #f98845;
   box-sizing: border-box;
-  padding-top: 6rem;
-  padding-inline: 6rem;
+  padding: 6rem;
   box-sizing: border-box;
   li {
     padding: 19px 24px;
