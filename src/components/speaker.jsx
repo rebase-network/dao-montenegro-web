@@ -219,6 +219,10 @@ const CardBox = styled.ul`
       }
     }
     @media (max-width: 780px) {
+      .avatar {
+        width: 90px;
+        height: 90px;
+      }
       .name {
         font-size: 20px;
       }
@@ -233,6 +237,27 @@ const CardBox = styled.ul`
         display: flex;
         flex-direction: column;
         gap: 10px;
+      }
+    }
+    @media (max-width: 550px) {
+      .avatar {
+        width: 60px;
+        height: 60px;
+      }
+      .user {
+        .name {
+          font-size: 16px !important;
+          line-height: 18px;
+        }
+        .title {
+          font-size: 14px !important;
+          line-height: 18px;
+        }
+      }
+
+      .sintro {
+        font-size: 12px !important;
+        line-height: 16px !important;
       }
     }
   }
