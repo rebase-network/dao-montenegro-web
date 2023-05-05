@@ -13,7 +13,7 @@ import Michael from "../assets/speakers/Michael.png";
 import ShreyJain from "../assets/speakers/ShreyJain.png";
 import SheenHu from "../assets/speakers/SheenHu.png";
 import Catthu from "../assets/speakers/Catthu.png";
-
+import Aman from "../assets/speakers/Aman.jpeg";
 
 const List = [
   {
@@ -101,6 +101,7 @@ const List = [
   {
     name: "Aman",
     title: "Community leader of DAOStar",
+    avatar: Aman,
     intro:
       "Aman is the Community leader of DAOStar, which is an organization that develops shared metadata standards for DAOs.",
   },
@@ -187,6 +188,8 @@ const CardBox = styled.ul`
     .avatar {
       width: 130px;
       height: 130px;
+      border-radius: 50%;
+      overflow: hidden;
       img {
         width: 100%;
       }
