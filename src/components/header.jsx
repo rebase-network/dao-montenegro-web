@@ -1,6 +1,9 @@
 import styled, { css } from "styled-components";
-import LogoSvg from "../assets/logo_full.svg";
+import SeedaoIcon from "../assets/sites/seedao.svg";
+import BuilderDAOIcon from "../assets/sites/builderdao.svg";
+import MaskIcon from "../assets/sites/mask.svg";
 import MenuIcon from "../assets/menu.svg";
+import Vector from "../assets/sites/vector.svg";
 import { useState } from "react";
 
 export default function Header({ sm }) {
@@ -20,7 +23,11 @@ export default function Header({ sm }) {
   return (
     <HeaderBox sm={sm} menuVisible={menuVisible}>
       <LogoBox>
-        <img src={LogoSvg} alt="" />
+        <img src={SeedaoIcon} alt="" className="logo" />
+        <img src={Vector} alt="" />
+        <img src={BuilderDAOIcon} alt="" className="logo" />
+        <img src={Vector} alt="" />
+        <img src={MaskIcon} alt="" className="logo" />
       </LogoBox>
       {sm && (
         <Menu src={MenuIcon} alt="" onClick={() => setMenuVisible(true)} />
@@ -74,7 +81,7 @@ const HeaderBox = styled.header`
   height: 9rem;
   left: 0px;
   top: 0px;
-  padding-inline: 6rem;
+  padding-inline: 20px;
   box-sizing: border-box;
   background: ${({ menuVisible }) =>
     menuVisible ? "rgba(131, 227, 219, 0.8)" : "rgba(131, 227, 219, 0.5)"};
@@ -87,14 +94,17 @@ const HeaderBox = styled.header`
 `;
 
 const LogoBox = styled.div`
-  padding-top: 2.1rem;
-  img {
-    width: 23.6rem !important;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  img.logo {
+    width: 12rem;
+    min-width: 100px;
   }
   @media (max-width: 780px) {
-    padding-top: 12px;
-    img {
-      width: 130px !important;
+    img.logo {
+      width: 70px;
+      min-width: unset;
     }
   }
 `;
@@ -121,7 +131,8 @@ const NavM = styled.div`
   top: 50px;
   height: calc(100vh - 50px);
   width: 100%;
-  background-color: rgba(0, 0 ,0, .2);
+  background-color: rgba(0, 0, 0, 0.2);
+  
 `;
 
 const NavMContent = styled.ul`
