@@ -30,6 +30,8 @@ import CointimeIcon from "../assets/logos/cointime.png";
 import BlockTempoIcon from "../assets/logos/blocktempo.png";
 import OrangePaperIcon from "../assets/logos/orangepaper.png";
 import WushuoIcon from "../assets/logos/wulogo.png";
+import CryptoSlateIcon from "../assets/logos/cryptoslate.png";
+import MetaverseIcon from "../assets/logos/metaverse.jpg";
 
 
 // communities
@@ -162,9 +164,18 @@ const medias = [
     name: "吴说区块链",
     img: WushuoIcon,
     href: "",
-    lv: 1,
-  }
-]
+  },
+  {
+    name: "Crypto Slate",
+    img: CryptoSlateIcon,
+    href: "",
+  },
+  {
+    name: "Metaverse Post",
+    img: MetaverseIcon,
+    href: "",
+  },
+];
 
 const communities = [
   {
