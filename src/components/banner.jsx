@@ -22,7 +22,7 @@ export default function Banner({ sm }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          call to action
+          Register Now
         </CallButton>
         {!sm && (
           <SocialBox>
