@@ -34,7 +34,8 @@ export default function Banner({ sm }) {
               <img src={TGIcon} alt="" />
             </a>
             <a
-              href="https://twitter.com/see_dao"
+              // href="https://twitter.com/see_dao"
+              href="https://twitter.com/en_SeeDAO"
               target="_blank"
               rel="noopener noreferrer"
             >
