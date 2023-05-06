@@ -63,6 +63,7 @@ import QuestNIcon from "../assets/logos/questn.png";
 import RingsnetworkIcon from "../assets/logos/ringsnetwork.png";
 import Web3eventIcon from "../assets/logos/web3event.svg";
 import Wormhole3Icon from "../assets/logos/wormhole3.png";
+import LegalDaoIcon from "../assets/logos/legal.png"
 
 const hosts = [
   {
@@ -311,6 +312,11 @@ const communities = [
   {
     name: "Ethsign",
     img: EthsignIcon,
+    href: "",
+  },
+  {
+    name: "Legal DAO",
+    img: LegalDaoIcon,
     href: "",
   },
   {
