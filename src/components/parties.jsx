@@ -159,12 +159,13 @@ const medias = [
     name: "橙皮书",
     img: OrangePaperIcon,
     href: "",
-    lv: 1,
+    class: "scale",
   },
   {
     name: "吴说区块链",
     img: WushuoIcon,
     href: "",
+    class: "scale",
   },
   {
     name: "Crypto Slate",
@@ -201,7 +202,7 @@ const communities = [
     name: "ECN以太坊中文社区",
     img: ECNIcon,
     href: "",
-    lv: 1,
+    class: "scale",
   },
   {
     name: "登链社区",
@@ -231,7 +232,7 @@ const communities = [
     name: "Web3GO",
     img: Web3GoIcon,
     href: "",
-    lv: 2,
+    class: "scale",
   },
   {
     name: "Odyssey DAO",
@@ -243,7 +244,7 @@ const communities = [
     name: "706",
     img: Seven06Icon,
     href: "",
-    lv: 2,
+    class: "scale",
   },
   {
     name: "Crypto Voyage",
@@ -303,11 +304,13 @@ const communities = [
     name: "Cryto Talks",
     img: CrytoTalksIcon,
     href: "",
+    class: "scale",
   },
   {
     name: "Dino",
     img: DinoIcon,
     href: "",
+    class: "scale",
   },
   {
     name: "Ethsign",
@@ -373,8 +376,6 @@ export default function PartiesDetail() {
           </div> */}
         </li>
 
-
-
         <li>
           <p className="title">CO-ORGANIZERS</p>
           <LogoBox className="medium">
@@ -409,7 +410,7 @@ export default function PartiesDetail() {
           <p className="title">CONTENT CURATORS</p>
           <SmallLogoBox>
             {content_curators.map((g, i) => (
-              <div key={i}>
+              <div key={i} className="curator">
                 {g.href ? (
                   <a href={g.href} target="_blank" rel="noopener noreferrer">
                     <img src={g.img} alt="" />
@@ -426,7 +427,7 @@ export default function PartiesDetail() {
           <p className="title">MEDIA PARTNERS</p>
           <SmallLogoBox>
             {medias.map((g, i) => (
-              <div key={i}>
+              <div key={i} className={g.class || ""}>
                 {g.href ? (
                   <a href={g.href} target="_blank" rel="noopener noreferrer">
                     <img src={g.img} alt="" />
@@ -443,7 +444,7 @@ export default function PartiesDetail() {
           <p className="title">COMMUNITY SUPPORTERS</p>
           <SmallLogoBox>
             {communities.map((g, i) => (
-              <div key={i}>
+              <div key={i} className={g.class || ""}>
                 {g.href ? (
                   <a href={g.href} target="_blank" rel="noopener noreferrer">
                     <img src={g.img} alt="" />
@@ -455,7 +456,6 @@ export default function PartiesDetail() {
             ))}
           </SmallLogoBox>
         </li>
-
       </IntroBox>
     </PartiesBox>
   );
@@ -535,7 +535,7 @@ const IntroBox = styled.ul`
     font-weight: 700;
     font-size: 4.4rem;
     line-height: 7.7rem;
-    margin-bottom: 2.5rem;
+    margin-block: 3.8rem;
     text-align: center;
   }
   li {
@@ -563,6 +563,11 @@ const IntroBox = styled.ul`
       }
     }
   }
+  @media (max-width: 780px) {
+    p.title {
+      margin-block: 36px;
+    }
+  }
 `;
 const LogoBox = styled.div`
   display: flex;
@@ -576,7 +581,6 @@ const LogoBox = styled.div`
     margin-bottom: 1.5rem;
     background-color: white;
     border-radius: 10px;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -609,6 +613,8 @@ const LogoBox = styled.div`
 
     @media (max-width: 780px) {
       border-radius: 6px;
+      width: calc(28%);
+      height: unset;
     }
   }
   &.medium > div {
@@ -625,10 +631,20 @@ const SmallLogoBox = styled(LogoBox)`
     height: 8rem;
     margin-inline: 3rem;
     background-color: transparent;
-    margin-bottom: 5rem;
+    margin-block: 10px;
 
     @media (max-width: 780px) {
-      width: calc(20% - 2rem);
+      width: calc(30% - 2rem);
+      margin-block: 12px;
+      height: 30px;
+
+      &.curator {
+        height: 50px;
+      }
+
+      &.scale img {
+        transform: scale(1.7);
+      }
     }
   }
 `;
