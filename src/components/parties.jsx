@@ -54,6 +54,13 @@ import EnsoulIcon from "../assets/logos/ensoul.svg";
 import SocialLayerIcon from "../assets/logos/sociallayer.svg";
 import Web3camp from "../assets/logos/web3camp.svg";
 
+import CrytoTalksIcon from "../assets/logos/cryptotalks.png";
+import DinoIcon from "../assets/logos/dino.jpg";
+import EthsignIcon from "../assets/logos/ethsign.svg";
+import QuestNIcon from "../assets/logos/questn.png";
+import RingsnetworkIcon from "../assets/logos/ringsnetwork.png";
+import Web3eventIcon from "../assets/logos/web3event.svg";
+import Wormhole3Icon from "../assets/logos/wormhole3.png";
 
 const hosts = [
   {
@@ -279,6 +286,41 @@ const communities = [
     img: Web3camp,
     href: "",
     lv: 2,
+  },
+  {
+    name: "Cryto Talks",
+    img: CrytoTalksIcon,
+    href: "",
+  },
+  {
+    name: "Dino",
+    img: DinoIcon,
+    href: "",
+  },
+  {
+    name: "Ethsign",
+    img: EthsignIcon,
+    href: "",
+  },
+  {
+    name: "Quest N",
+    img: QuestNIcon,
+    href: "",
+  },
+  {
+    name: "Rings network",
+    img: RingsnetworkIcon,
+    href: "",
+  },
+  {
+    name: "Web3Event",
+    img: Web3eventIcon,
+    href: "",
+  },
+  {
+    name: "Wormhole3",
+    img: Wormhole3Icon,
+    href: "",
   },
 ];
 
