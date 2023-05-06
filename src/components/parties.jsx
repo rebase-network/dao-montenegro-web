@@ -59,6 +59,7 @@ import Web3camp from "../assets/logos/web3camp.svg";
 import CrytoTalksIcon from "../assets/logos/cryptotalks.png";
 import DinoIcon from "../assets/logos/dino.jpg";
 import EthsignIcon from "../assets/logos/ethsign.svg";
+import CrossspaceIcon from "../assets/logos/crossspace.png";
 import QuestNIcon from "../assets/logos/questn.png";
 import RingsnetworkIcon from "../assets/logos/ringsnetwork.png";
 import Web3eventIcon from "../assets/logos/web3event.svg";
@@ -315,6 +316,11 @@ const communities = [
   {
     name: "Ethsign",
     img: EthsignIcon,
+    href: "",
+  },
+  {
+    name: "Crossspace",
+    img: CrossspaceIcon,
     href: "",
   },
   {
