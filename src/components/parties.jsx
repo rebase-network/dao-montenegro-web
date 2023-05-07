@@ -31,7 +31,7 @@ import BlockTempoIcon from "../assets/logos/blocktempo.png";
 import OrangePaperIcon from "../assets/logos/orangepaper.png";
 import WushuoIcon from "../assets/logos/wulogo.png";
 import CryptoSlateIcon from "../assets/logos/cryptoslate.png";
-import MetaverseIcon from "../assets/logos/metaverse.jpg";
+import MetaverseIcon from "../assets/logos/metaverse.png";
 
 
 // communities
@@ -154,7 +154,7 @@ const medias = [
     name: "BlockTempo",
     img: BlockTempoIcon,
     href: "",
-    lv: 1,
+    style: { transform: "scale(1.3)" },
   },
   {
     name: "橙皮书",
@@ -167,6 +167,7 @@ const medias = [
     img: WushuoIcon,
     href: "",
     class: "scale",
+    style: { transform: "scale(1.3)" },
   },
   {
     name: "Crypto Slate",
@@ -177,6 +178,8 @@ const medias = [
     name: "Metaverse Post",
     img: MetaverseIcon,
     href: "",
+    class: "scale",
+    style: { transform: "scale(1.5)" },
   },
 ];
 
@@ -269,7 +272,7 @@ const communities = [
     name: "PFP DAO",
     img: PfpdaoIcon,
     href: "",
-    lv: 2,
+    style: { transform: "scale(1.3)" },
   },
   {
     name: "Web3 Map",
@@ -419,10 +422,10 @@ export default function PartiesDetail() {
               <div key={i} className="curator">
                 {g.href ? (
                   <a href={g.href} target="_blank" rel="noopener noreferrer">
-                    <img src={g.img} alt="" />
+                    <img src={g.img} alt="" style={g.style} />
                   </a>
                 ) : (
-                  <img src={g.img} alt="" />
+                  <img src={g.img} alt="" style={g.style} />
                 )}
               </div>
             ))}
@@ -436,10 +439,10 @@ export default function PartiesDetail() {
               <div key={i} className={g.class || ""}>
                 {g.href ? (
                   <a href={g.href} target="_blank" rel="noopener noreferrer">
-                    <img src={g.img} alt="" />
+                    <img src={g.img} alt="" style={g.style} />
                   </a>
                 ) : (
-                  <img src={g.img} alt="" />
+                  <img src={g.img} alt="" style={g.style} />
                 )}
               </div>
             ))}
@@ -453,10 +456,10 @@ export default function PartiesDetail() {
               <div key={i} className={g.class || ""}>
                 {g.href ? (
                   <a href={g.href} target="_blank" rel="noopener noreferrer">
-                    <img src={g.img} alt="" />
+                    <img src={g.img} alt="" style={g.style} />
                   </a>
                 ) : (
-                  <img src={g.img} alt="" />
+                  <img src={g.img} alt="" style={g.style} />
                 )}
               </div>
             ))}
@@ -649,7 +652,7 @@ const SmallLogoBox = styled(LogoBox)`
       }
 
       &.scale img {
-        transform: scale(1.7);
+        transform: scale(2) !important;
       }
     }
   }
