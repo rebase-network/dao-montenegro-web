@@ -69,6 +69,7 @@ import RingsnetworkIcon from "../assets/logos/ringsnetwork.png";
 import Web3eventIcon from "../assets/logos/web3event.svg";
 import Wormhole3Icon from "../assets/logos/wormhole3.png";
 import LegalDaoIcon from "../assets/logos/legal.png"
+import ThreeDaoIcon from "../assets/logos/threedao.svg";
 
 const hosts = [
   {
@@ -118,6 +119,7 @@ const sponsors = [
     name: "Greenpill",
     img: GreenpillIcon,
     href: "https://greenpill.io/",
+    style: { transform: "scale(0.8)" },
   },
   {
     name: "Sendingme",
@@ -135,7 +137,7 @@ const sponsors = [
     name: "EthSign",
     img: EthsignIcon,
     href: "https://www.ethsign.xyz/",
-    style: { transform: "scale(0.7)" },
+    style: { transform: "scale(0.62)" },
   },
 ];
 
@@ -380,6 +382,12 @@ const communities = [
     name: "Wormhole3",
     img: Wormhole3Icon,
     href: "",
+  },
+  {
+    name: "Three DAO",
+    img: ThreeDaoIcon,
+    href: "",
+    class: "three"
   },
 ];
 
@@ -661,7 +669,10 @@ const LogoBox = styled.div`
     width: calc(22% - 2rem);
     @media (max-width: 500px) {
       width: calc(25%);
-      /* height: 60px; */
+      height: 60px;
+      img {
+        transform: scale(1) !important;
+      }
     }
   }
 `;
@@ -676,6 +687,9 @@ const SmallLogoBox = styled(LogoBox)`
     margin-inline: 3rem;
     background-color: transparent;
     margin-block: 10px;
+    &.three img {
+      transform: scale(1.1) !important;
+    }
 
     @media (max-width: 780px) {
       width: calc(30% - 2rem);
@@ -688,6 +702,10 @@ const SmallLogoBox = styled(LogoBox)`
 
       &.scale img {
         transform: scale(2) !important;
+      }
+
+      &.three img {
+        transform: scale(1.3) !important;
       }
     }
   }
