@@ -15,6 +15,10 @@ import RebaseIcon from "../assets/logos/rebase.svg";
 // sponsors
 import MXCIcon from "../assets/logos/mxc.svg";
 import GreenpillIcon from "../assets/logos/greenpill.png";
+import BeosinIcon from "../assets/logos/Beosin.svg";
+import ZlockIcon from "../assets/logos/zcloak.svg";
+import KucoinIcon from "../assets/logos/kucoin.svg";
+import SendingmeIcon from "../assets/logos/sendingme.svg";
 
 // content curators
 import ThreeWW3Icon from "../assets/logos/3ww3.svg";
@@ -97,11 +101,41 @@ const sponsors = [
     name: "MXC",
     img: MXCIcon,
     href: "https://www.mxc.com/",
+    style: { transform: "scale(0.8)" },
+  },
+  {
+    name: "zCloak",
+    img: ZlockIcon,
+    href: "https://zcloak.network/",
+    style: { transform: "scale(0.8)" },
+  },
+  {
+    name: "Beosin",
+    img: BeosinIcon,
+    href: "https://beosin.com/",
   },
   {
     name: "Greenpill",
     img: GreenpillIcon,
     href: "https://greenpill.io/",
+  },
+  {
+    name: "Sendingme",
+    img: SendingmeIcon,
+    href: "https://sending.me/",
+    style: { transform: "scale(0.8)" },
+  },
+  {
+    name: "Kucoin Venture",
+    img: KucoinIcon,
+    href: "https://www.kucoin.com/kucoin-ventures",
+    style: { transform: "scale(0.8)" },
+  },
+  {
+    name: "EthSign",
+    img: EthsignIcon,
+    href: "https://www.ethsign.xyz/",
+    style: { transform: "scale(0.7)" },
   },
 ];
 
@@ -400,15 +434,15 @@ export default function PartiesDetail() {
 
         <li id="sponsor">
           <p className="title">SPONSORS</p>
-          <LogoBox>
+          <LogoBox className="medium">
             {sponsors.map((g, i) => (
               <div key={i}>
                 {g.href ? (
                   <a href={g.href} target="_blank" rel="noopener noreferrer">
-                    <img src={g.img} alt="" />
+                    <img src={g.img} alt="" style={g.style} />
                   </a>
                 ) : (
-                  <img src={g.img} alt="" />
+                  <img src={g.img} alt="" style={g.style} />
                 )}
               </div>
             ))}
@@ -588,7 +622,7 @@ const LogoBox = styled.div`
     height: 13.2rem;
     margin-inline: 1rem;
     margin-bottom: 1.5rem;
-    background-color: white;
+    /* background-color: white; */
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -627,7 +661,12 @@ const LogoBox = styled.div`
     }
   }
   &.medium > div {
+    margin: 8px 16px;
     width: calc(22% - 2rem);
+    @media (max-width: 500px) {
+      width: calc(25%);
+      /* height: 60px; */
+    }
   }
 `;
 
