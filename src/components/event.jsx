@@ -21,7 +21,7 @@ export default function EventDetail() {
             <img src={TimeIcon} alt="" />
           </span>
 
-          <span>May 22</span>
+          <span>May 21-22</span>
         </div>
       </Content>
       <ImgBox>
