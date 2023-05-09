@@ -19,6 +19,7 @@ import BeosinIcon from "../assets/logos/Beosin.svg";
 import ZlockIcon from "../assets/logos/zcloak.svg";
 import KucoinIcon from "../assets/logos/kucoin.svg";
 import SendingmeIcon from "../assets/logos/sendingme.svg";
+import EthsignIcon from "../assets/logos/ethsign.svg";
 
 // content curators
 import ThreeWW3Icon from "../assets/logos/3ww3.svg";
@@ -62,7 +63,6 @@ import Web3camp from "../assets/logos/web3camp.svg";
 
 import CrytoTalksIcon from "../assets/logos/cryptotalks.png";
 import DinoIcon from "../assets/logos/dino.jpg";
-import EthsignIcon from "../assets/logos/ethsign.svg";
 import CrossspaceIcon from "../assets/logos/crossspace.png";
 import QuestNIcon from "../assets/logos/questn.png";
 import RingsnetworkIcon from "../assets/logos/ringsnetwork.png";
@@ -351,11 +351,6 @@ const communities = [
     class: "scale",
   },
   {
-    name: "Ethsign",
-    img: EthsignIcon,
-    href: "",
-  },
-  {
     name: "Crossspace",
     img: CrossspaceIcon,
     href: "",
@@ -369,6 +364,7 @@ const communities = [
     name: "Quest N",
     img: QuestNIcon,
     href: "",
+    style: { transform: "scale(0.8)" },
   },
   {
     name: "Rings network",
