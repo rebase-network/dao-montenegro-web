@@ -49,7 +49,7 @@ import BfrenzIcon from "../assets/logos/bfrenz.svg";
 import KNN3Icon from "../assets/logos/KNN3.svg";
 // import SocialLayerIcon from "../assets/logos/social_layer.png";
 import Web3GoIcon from "../assets/logos/web3go.png";
-import OdysseyIcon from "../assets/logos/odyssey.svg";
+import OdysseyIcon from "../assets/logos/odyssey.png";
 import Seven06Icon from "../assets/logos/706.svg";
 import Cryptovoyage from "../assets/logos/cryptovoyage.svg";
 import DeboxIcon from "../assets/logos/debox.svg";
@@ -278,7 +278,7 @@ const communities = [
     name: "Odyssey DAO",
     img: OdysseyIcon,
     href: "",
-    lv: 2,
+    class: "scale",
   },
   {
     name: "706",
@@ -387,7 +387,7 @@ const communities = [
     name: "Three DAO",
     img: ThreeDaoIcon,
     href: "",
-    class: "three"
+    class: "three",
   },
 ];
 
