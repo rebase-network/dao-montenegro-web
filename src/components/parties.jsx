@@ -102,13 +102,13 @@ const sponsors = [
     name: "MXC",
     img: MXCIcon,
     href: "https://www.mxc.com/",
-    style: { transform: "scale(0.8)" },
+    style: { transform: "scale(0.9)" },
   },
   {
     name: "zCloak",
     img: ZlockIcon,
     href: "https://zcloak.network/",
-    style: { transform: "scale(0.8)" },
+    style: { transform: "scale(0.9)" },
   },
   {
     name: "Beosin",
@@ -119,7 +119,7 @@ const sponsors = [
     name: "Greenpill",
     img: GreenpillIcon,
     href: "https://greenpill.io/",
-    style: { transform: "scale(0.8)" },
+    class: "greenpill"
   },
   {
     name: "Sendingme",
@@ -440,7 +440,7 @@ export default function PartiesDetail() {
           <p className="title">SPONSORS</p>
           <LogoBox className="medium">
             {sponsors.map((g, i) => (
-              <div key={i}>
+              <div key={i} className={g.class || ""}>
                 {g.href ? (
                   <a href={g.href} target="_blank" rel="noopener noreferrer">
                     <img src={g.img} alt="" style={g.style} />
@@ -667,6 +667,13 @@ const LogoBox = styled.div`
   &.medium > div {
     margin: 8px 16px;
     width: calc(22% - 2rem);
+    &.greenpill img {
+      transform: scale(0.9) !important;
+      @media (max-width: 900px) {
+        transform: scale(1.1) !important;
+      }
+    }
+
     @media (max-width: 500px) {
       width: calc(25%);
       height: 60px;
