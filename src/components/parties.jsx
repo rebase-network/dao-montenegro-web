@@ -17,7 +17,8 @@ import MXCIcon from "../assets/logos/mxc.svg";
 import GreenpillIcon from "../assets/logos/greenpill.png";
 import BeosinIcon from "../assets/logos/Beosin.svg";
 import ZlockIcon from "../assets/logos/zcloak.svg";
-import KucoinIcon from "../assets/logos/kucoin.svg";
+import KucoinLabsIcon from "../assets/logos/kucoin_labs.png";
+import KCCIcon from "../assets/logos/kcc.png";
 import SendingmeIcon from "../assets/logos/sendingme.svg";
 import EthsignIcon from "../assets/logos/ethsign.svg";
 
@@ -127,10 +128,22 @@ const sponsors = [
     href: "https://sending.me/",
     style: { transform: "scale(0.8)" },
   },
+  // {
+  //   name: "Kucoin Venture",
+  //   img: KucoinIcon,
+  //   href: "https://www.kucoin.com/kucoin-ventures",
+  //   style: { transform: "scale(0.8)" },
+  // },
   {
-    name: "Kucoin Venture",
-    img: KucoinIcon,
-    href: "https://www.kucoin.com/kucoin-ventures",
+    name: "Kucoin Labs",
+    img: KucoinLabsIcon,
+    href: "https://www.kucoin.com/land/kucoinlabs",
+    style: { transform: "scale(0.8)" },
+  },
+  {
+    name: "KCC",
+    img: KCCIcon,
+    href: "https://www.kcc.io/",
     style: { transform: "scale(0.8)" },
   },
   {
