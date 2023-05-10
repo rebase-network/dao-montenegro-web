@@ -138,13 +138,13 @@ const sponsors = [
     name: "Kucoin Labs",
     img: KucoinLabsIcon,
     href: "https://www.kucoin.com/land/kucoinlabs",
-    style: { transform: "scale(0.8)" },
+    style: { transform: "scale(0.62)" },
   },
   {
     name: "KCC",
     img: KCCIcon,
     href: "https://www.kcc.io/",
-    style: { transform: "scale(0.8)" },
+    style: { transform: "scale(0.62)" },
   },
   {
     name: "EthSign",
