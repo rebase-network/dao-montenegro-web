@@ -75,6 +75,7 @@ import Web3eventIcon from "../assets/logos/web3event.svg";
 import Wormhole3Icon from "../assets/logos/wormhole3.png";
 import LegalDaoIcon from "../assets/logos/legal.png"
 import ThreeDaoIcon from "../assets/logos/threedao.svg";
+import SocityIcon from "../assets/logos/socity.svg";
 
 const hosts = [
   {
@@ -424,6 +425,11 @@ const communities = [
     img: ThreeDaoIcon,
     href: "",
     class: "three",
+  },
+  {
+    name: "SoCity",
+    img: SocityIcon,
+    style: { transform: "scale(1.1)" },
   },
 ];
 
