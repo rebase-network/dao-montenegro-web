@@ -21,6 +21,10 @@ import KucoinLabsIcon from "../assets/logos/kucoin_labs.png";
 import KCCIcon from "../assets/logos/kcc.png";
 import SendingmeIcon from "../assets/logos/sendingme.svg";
 import EthsignIcon from "../assets/logos/ethsign.svg";
+import CycleLabIcon from "../assets/logos/cyclelab.svg";
+import CoinWIcon from "../assets/logos/coinw.svg";
+import SafeStakeIcon from "../assets/logos/safestake.svg";
+import MetaStoneIcon from "../assets/logos/metastone.svg";
 
 // content curators
 import ThreeWW3Icon from "../assets/logos/3ww3.svg";
@@ -120,7 +124,7 @@ const sponsors = [
     name: "Greenpill",
     img: GreenpillIcon,
     href: "https://greenpill.io/",
-    class: "greenpill"
+    class: "greenpill",
   },
   {
     name: "Sendingme",
@@ -151,6 +155,25 @@ const sponsors = [
     img: EthsignIcon,
     href: "https://www.ethsign.xyz/",
     style: { transform: "scale(0.62)" },
+  },
+  {
+    name: "Cycle Lab",
+    img: CycleLabIcon,
+    style: { transform: "scale(0.8)" },
+  },
+  {
+    name: "CoinW",
+    img: CoinWIcon,
+    style: { transform: "scale(0.8)" },
+  },
+  {
+    name: "Safe Stake",
+    img: SafeStakeIcon,
+  },
+  {
+    name: "Meta Stone",
+    img: MetaStoneIcon,
+    style: { transform: "scale(0.8)" },
   },
 ];
 
