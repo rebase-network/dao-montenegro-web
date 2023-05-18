@@ -76,6 +76,7 @@ import Wormhole3Icon from "../assets/logos/wormhole3.png";
 import LegalDaoIcon from "../assets/logos/legal.png"
 import ThreeDaoIcon from "../assets/logos/threedao.svg";
 import SocityIcon from "../assets/logos/socity.svg";
+import Zerox499Icon from "../assets/logos/0x499.png";
 
 const hosts = [
   {
@@ -431,6 +432,12 @@ const communities = [
     img: SocityIcon,
     style: { transform: "scale(1.1)" },
   },
+  {
+    name: "0x499",
+    img: Zerox499Icon,
+    style: { transform: "scale(0.7)" },
+    class: "zerox499"
+  },
 ];
 
 
@@ -755,6 +762,9 @@ const SmallLogoBox = styled(LogoBox)`
 
       &.three img {
         transform: scale(1.3) !important;
+      }
+      &.zerox499 img {
+        transform: scale(1.1) !important;
       }
     }
   }
