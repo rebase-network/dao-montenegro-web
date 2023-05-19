@@ -43,6 +43,7 @@ import OrangePaperIcon from "../assets/logos/orangepaper.png";
 import WushuoIcon from "../assets/logos/wulogo.png";
 import CryptoSlateIcon from "../assets/logos/cryptoslate.png";
 import MetaverseIcon from "../assets/logos/metaverse.png";
+import ChainTimesIcon from "../assets/logos/chaintimes.svg";
 
 
 // communities
@@ -261,6 +262,12 @@ const medias = [
     href: "",
     class: "scale",
     style: { transform: "scale(1.5)" },
+  },
+  {
+    name: "Chain Times",
+    img: ChainTimesIcon,
+    href: "",
+    style: { transform: "scale(0.9)" },
   },
 ];
 
