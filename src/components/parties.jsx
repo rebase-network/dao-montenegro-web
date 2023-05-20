@@ -775,7 +775,8 @@ const SmallLogoBox = styled(LogoBox)`
       }
 
       &.three img {
-        transform: scale(1.3) !important;
+        transform: scale(1) !important;
+        width: 100px;
       }
       &.zerox499 img {
         transform: scale(1.1) !important;
