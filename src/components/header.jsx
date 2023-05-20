@@ -1,7 +1,9 @@
 import styled, { css } from "styled-components";
 import SeedaoIcon from "../assets/sites/seedao.svg";
-import BuilderDAOIcon from "../assets/sites/builderdao.svg";
-import MaskIcon from "../assets/sites/mask.svg";
+// import BuilderDAOIcon from "../assets/sites/builderdao.svg";
+import BuilderDAOIcon from "../assets/sites/builderdao.png";
+import MaskIcon from "../assets/sites/mask.png";
+// import MaskIcon from "../assets/sites/mask.svg";
 import MenuIcon from "../assets/menu.svg";
 import Vector from "../assets/sites/vector.svg";
 import { useState } from "react";
