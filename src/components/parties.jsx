@@ -76,7 +76,7 @@ import RingsnetworkIcon from "../assets/logos/ringsnetwork.png";
 import Web3eventIcon from "../assets/logos/web3event.svg";
 import Wormhole3Icon from "../assets/logos/wormhole3.png";
 import LegalDaoIcon from "../assets/logos/legal.png"
-import ThreeDaoIcon from "../assets/logos/threedao.svg";
+import ThreeDaoIcon from "../assets/logos/threedao.png";
 import SocityIcon from "../assets/logos/socity.svg";
 import Zerox499Icon from "../assets/logos/0x499.png";
 
@@ -758,7 +758,7 @@ const SmallLogoBox = styled(LogoBox)`
     background-color: transparent;
     margin-block: 10px;
     &.three img {
-      transform: scale(1.1) !important;
+      transform: scale(0.9) !important;
     }
 
     @media (max-width: 780px) {
@@ -776,7 +776,6 @@ const SmallLogoBox = styled(LogoBox)`
 
       &.three img {
         transform: scale(1) !important;
-        width: 100px;
       }
       &.zerox499 img {
         transform: scale(1.1) !important;
