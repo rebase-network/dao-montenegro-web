@@ -6,8 +6,8 @@ import TimeIcon from "../assets/time.svg";
 
 // hosts
 import SeeDAOIcon from "../assets/logos/seedao.svg";
-import BuilderDAOIcon from "../assets/logos/builder_dao.svg";
-import MaskIcon from "../assets/logos/mask.svg";
+import BuilderDAOIcon from "../assets/logos/builder_dao.png";
+import MaskIcon from "../assets/logos/mask.png";
 
 // cohosts
 import RebaseIcon from "../assets/logos/rebase.svg";
