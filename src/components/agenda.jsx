@@ -2,8 +2,9 @@ import styled from "styled-components";
 import AgendaImg from "../assets/agenda.png";
 import AgendaBg from "../assets/agenda_bg.png";
 import AgendaTitle from "../assets/agenda_title.png";
+import PizzaBox from "./pizza";
 
-export default function Agenda() {
+export default function Agenda({sm}) {
   return (
     <AgendaBox id="agenda">
       <Header>
@@ -112,6 +113,7 @@ export default function Agenda() {
             </p>
           </Part>
         </Container>
+        <PizzaBox sm={sm} />
       </Content>
     </AgendaBox>
   );
