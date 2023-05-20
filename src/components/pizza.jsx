@@ -62,9 +62,12 @@ const QRcodeBox = styled.div`
       width: 50%;
     }
   }
-  /* @media (max-width: 500px) {
-    .right {
-      width: 50%;
+  @media (max-width: 500px) {
+    .left {
+      width: 70px;
     }
-  } */
+    .right {
+      width: 55%;
+    }
+  }
 `;
